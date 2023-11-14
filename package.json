@@ -1,0 +1,34 @@
+{
+  "name": "@lassi-js/kilimukku-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "விநியோகம்/குறியீட்டு.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "தூயமைப்படுத்து": "rimraf விநியோகம்",
+    "தொகுப்பு": "pnpm புதுப்பிப்பு && pnpm தூயமைப்படுத்து && pnpm tspc -p tsconfig.json",
+    "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint --ext .js,.ts மூலம் சோதனை",
+    "வெளியிடு": "pnpm சோதனை && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
+    "புதுப்பிப்பு": "pnpm genversion  --es6 --semi மூலம்/பதிப்பு.ts"
+  },
+  "keywords": [],
+  "author": "Julien Jean Malard-Adam",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@constl/ipa": "^0.9.14",
+    "@lassi-js/kili": "^0.3.3",
+    "@lassi-js/kilimukku": "^1.0.1",
+    "ennikkai": "^2.2.3",
+    "nuchabal": "^3.1.6"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.3",
+    "vue": "^3.3.8"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.8"
+  }
+}
