@@ -6,6 +6,8 @@ import {
   மரம்_மொழிபெயர்ப்பு_அகராதி_வகை,
 } from "@lassi-js/kilimukku";
 
+export {version as பதிப்பு} from "@/பதிப்பு.js";
+
 export default ({
   மொழி,
   மாற்றுமொழிகள் = [],
