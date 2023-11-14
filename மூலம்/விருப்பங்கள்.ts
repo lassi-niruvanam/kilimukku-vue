@@ -1,18 +1,29 @@
 import Cookies from "js-cookie";
 
 import { App, Ref, inject, ref, watchEffect } from "vue";
+import { எண்ணுரு_நினைவி_பெயர், மொழி_நினைவி_பெயர் } from "./மாறிலிகள்";
 
 export const விருப்பங்களை_பயன்படுத்து = () => {
-  const { விரும்பின_மொழிகள், தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு } = inject<{
+  const { விரும்பின_மொழிகள், தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு, நினைவிகள் } = inject<{
     விரும்பின_மொழிகள்: Ref<string[]>;
     தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு: Ref<string>;
-  }>("விருப்பங்கள்");
+    நினைவிகள்?: {
+      மொழி?: string;
+      எண்ணுரு?: string;
+    };
+  }>("விருப்பங்கள்")!;
 
   watchEffect(() => {
-    Cookies.set("paramètres.langue", JSON.stringify(விரும்பின_மொழிகள்.value));
+    Cookies.set(
+      நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்,
+      JSON.stringify(விரும்பின_மொழிகள்.value),
+    );
   });
   watchEffect(() => {
-    Cookies.set("paramètres.numération", தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value);
+    Cookies.set(
+      நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்,
+      தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value,
+    );
   });
 
   return {
@@ -24,16 +35,21 @@ export const விருப்பங்களை_பயன்படுத்த
 export const விருப்பங்களை_உருவாக்கு = ({
   மொழி,
   மாற்றுமொழிகள் = [],
+  நினைவிகள்,
 }: {
   மொழி: string;
   மாற்றுமொழிகள்?: string[];
+  நினைவிகள்?: {
+    மொழி?: string;
+    எண்ணுரு?: string;
+  };
 }) => {
   return {
     install: (செயலி: App) => {
-      const témoin = Cookies.get("paramètres.langue");
+      const மொழி_நினைவி = Cookies.get(நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்);
       let சேமிக்கப்பட்டவை: string[] | undefined = undefined;
       try {
-        சேமிக்கப்பட்டவை = témoin ? JSON.parse(témoin) : undefined;
+        சேமிக்கப்பட்டவை = மொழி_நினைவி ? JSON.parse(மொழி_நினைவி) : undefined;
       } catch {
         // பரவயில்லை :)
       }
@@ -43,10 +59,13 @@ export const விருப்பங்களை_உருவாக்கு = 
           : [மொழி, ...மாற்றுமொழிகள்],
       );
 
-      const témoin_num = Cookies.get("paramètres.numération");
-      const தேர்நதெடுத்தப்பட்ட_எண்ணுரு = ref<string>(témoin_num || undefined);
+      const எண்ணுரு_நினைவி = Cookies.get(
+        நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்,
+      );
+      const தேர்நதெடுத்தப்பட்ட_எண்ணுரு = ref(எண்ணுரு_நினைவி || undefined);
 
       செயலி.provide("விருப்பங்கள்", {
+        நினைவிகள்,
         விரும்பின_மொழிகள்,
         தேர்நதெடுத்தப்பட்ட_எண்ணுரு,
       });

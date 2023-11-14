@@ -78,14 +78,19 @@ export const மொழிகளைப்_பயன்படுத்து = () 
 export const மொழிகளை_உருவாக்கு = ({
   மொழி,
   மாற்றுமொழிகள் = [],
+  நினைவிகள்,
 }: {
   மொழி: string;
   மாற்றுமொழிகள்?: string[];
+  நினைவிகள்?: {
+    மொழி?: string;
+    எண்ணுரு?: string;
+  };
 }) => {
   return {
     install: (செயலி: App) => {
       const விண்மீன் = செயலி.config.globalProperties.$constl;
-      செயலி.use(விருப்பங்களை_உருவாக்கு({ மொழி, மாற்றுமொழிகள் }));
+      செயலி.use(விருப்பங்களை_உருவாக்கு({ மொழி, மாற்றுமொழிகள், நினைவிகள் }));
 
       const nuchabäl = new Nuchabäl({ chumil: விண்மீன் });
       செயலி.provide("nuch'ab'äl", { nuchabäl });

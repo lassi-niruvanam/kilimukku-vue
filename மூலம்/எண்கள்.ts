@@ -149,16 +149,21 @@ export const எண்களைப்_பயன்படுத்து = () => 
 export const எண்களை_உருவாக்கு = ({
   மொழி,
   மாற்றுமொழிகள் = [],
+  நினைவிகள்,
 }: {
   மொழி: string;
   மாற்றுமொழிகள்?: string[];
+  நினைவிகள்?: {
+    மொழி?: string;
+    எண்ணுரு?: string;
+  };
 }) => {
   return {
     install: (செயலி: App) => {
       const விண்மீன் = செயலி.config.globalProperties.$constl;
       const nuchabäl = செயலி.config.globalProperties.$nuchabäl;
       if (!nuchabäl) {
-        const மொழிகள் = மொழிகளை_உருவாக்கு({ மொழி, மாற்றுமொழிகள் });
+        const மொழிகள் = மொழிகளை_உருவாக்கு({ மொழி, மாற்றுமொழிகள், நினைவிகள் });
         செயலி.use(மொழிகள்);
       }
       const எண்ணிக்கை_ = new எண்ணிக்கை({ விண்மீன் });
