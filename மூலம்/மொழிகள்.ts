@@ -93,7 +93,7 @@ export const மொழிகளை_உருவாக்கு = ({
       செயலி.use(விருப்பங்களை_உருவாக்கு({ மொழி, மாற்றுமொழிகள், நினைவிகள் }));
 
       const nuchabäl = new Nuchabäl({ chumil: விண்மீன் });
-      செயலி.provide("nuch'ab'äl", { nuchabäl });
+      செயலி.provide("nuch'ab'äl", nuchabäl);
       செயலி.config.globalProperties.$nuchabäl = nuchabäl;
     },
   };
