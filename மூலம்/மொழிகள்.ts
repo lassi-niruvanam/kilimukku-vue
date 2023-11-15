@@ -1,5 +1,8 @@
 import { type ComputedRef, type Ref, computed, inject, App } from "vue";
-import { குறிப்பின்_மதிப்பை_பெறு, குறிப்பு_அல்லது_மதிப்பு } from "./கருவிகள்";
+import {
+  குறிப்பின்_மதிப்பை_பெறு,
+  குறிப்பு_அல்லது_மதிப்பு,
+} from "./கருவிகள்.js";
 import { Nuchabäl } from "nuchabal";
 import {
   விருப்பங்களை_உருவாக்கு,
@@ -17,7 +20,9 @@ export const மொழிகளைப்_பயன்படுத்து = () 
 
   const { தேர்ந்தெடுத்தப்பட்ட_மொழிகள் } = விருப்பங்களை_பயன்படுத்து();
   const மொழி = computed(() => தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value[0]);
-  const மாற்றுமொழிகள் = computed(() => தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value.slice(1));
+  const மாற்றுமொழிகள் = computed(() =>
+    தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value.slice(1),
+  );
 
   const மொழிகளை_தேர்ந்தெடுக்கொள்ளு = (மொழிகள்: string | string[]) => {
     if (Array.isArray(மொழிகள்)) {

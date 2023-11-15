@@ -7,15 +7,17 @@ import {
   watchEffect,
 } from "vue";
 import type { Ref, App } from "vue";
+import type { types } from "@constl/ipa";
 import { v4 as uuidv4 } from "uuid";
 
 import Semaphore from "@chriscdn/promise-semaphore";
-import { isEqual } from "lodash";
+import pkg from "lodash";
+const { isEqual } = pkg;
+
 import {
   கிளிமூக்கு,
   மரத்திலிருந்து_மொழிபெயர்ப்பு_அகராதி,
   மொழிபெயர்ப்பு_அகராதியிலிருந்து_மரம்,
-  மொழிபெயர்ப்புகளை_ஒன்றாக்கு,
 } from "@lassi-js/kilimukku";
 import type {
   பிணையம்_மொழிபெயர்ப்பு_பரிந்துரை_வகை,
@@ -26,7 +28,6 @@ import type {
 
 import { nuchabäl_கண்டுப்பிடி, மொழிகளைப்_பயன்படுத்து } from "./மொழிகள்.js";
 import { எண்களை_உருவாக்கு, எண்களைப்_பயன்படுத்து } from "./எண்கள்.js";
-import { schémaFonctionOublier } from "@constl/ipa/dist/src/types.js";
 
 const கிளியை_கண்டுப்பிடி = () => {
   const கிளி = inject<கிளிமூக்கு>("கிளிமூக்கு");
@@ -42,7 +43,7 @@ class சேமிக்கப்பட்ட_செய்திகள் {
         [அடையாளம்: string]: {
           செய்திகள்: Ref<மரம்_மொழிபெயர்ப்பு_அகராதி_வகை>;
           கோரிக்கைகள்: Set<string>;
-          மறந்துவிடு?: schémaFonctionOublier;
+          மறந்துவிடு?: types.schémaFonctionOublier;
         };
       };
     };
@@ -64,7 +65,6 @@ class சேமிக்கப்பட்ட_செய்திகள் {
     கிளி_அடையாளம்: string;
     விருப்பங்களின்_அடையாளம்: string;
   } {
-
     return {
       கிளி_அடையாளம்: கிளி.தனித்துவமிக்க_அடையாளம்,
       விருப்பங்களின்_அடையாளம்: கிளி.தனித்துவமிக்க_அடையாளம் + பரிந்துரைகள்,
@@ -245,8 +245,8 @@ const மொழியாக்கம்_பயன்படுத்து = ({
           typeof இ === "number"
             ? இ
             : typeof இடைச்செருகல் === "number"
-            ? இடைச்செருகல்
-            : 0;
+              ? இடைச்செருகல்
+              : 0;
         return செய்தியை_வடிவூட்டு(
           பன்மை_சார்ந்த_செய்திகள்[nPluriel] ||
             பன்மை_சார்ந்த_செய்திகள்[பன்மை_சார்ந்த_செய்திகள்.length - 1],
@@ -283,7 +283,9 @@ const கிடைக்கும்_மொழிகளை_பயன்படு
   const nuchabäl = nuchabäl_கண்டுப்பிடி();
 
   const கிளிமூக்கு_மொழி_குறியீடுகள் = ref<string[]>([]);
-  let கிளிமூக்கு_மொழி_குறியீடுகளை_மறந்துவிடு: schémaFonctionOublier | undefined;
+  let கிளிமூக்கு_மொழி_குறியீடுகளை_மறந்துவிடு:
+    | types.schémaFonctionOublier
+    | undefined;
   onMounted(async () => {
     கிளிமூக்கு_மொழி_குறியீடுகளை_மறந்துவிடு = await நம்ம_கிளி.மொழிகளை_கேள்ளு({
       செ: (மொழிகள்) => {
@@ -469,7 +471,7 @@ export const கிளிமூக்கை_உருவாக்கு = ({
   மொழி,
   மாற்றுமொழிகள் = [],
   கிளி,
-  நினைவிகள்
+  நினைவிகள்,
 }: {
   மொழி: string;
   மாற்றுமொழிகள்?: string[];

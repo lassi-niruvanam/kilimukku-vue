@@ -33,5 +33,5 @@
       { "transform": "typescript-transform-paths", "afterDeclarations": true }
     ]
   },
-  "include": ["மூலம்", "@types"]
+  "include": ["மூலம்", "@types", "சோதனை"]
 }

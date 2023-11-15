@@ -1,18 +1,19 @@
 import type { App } from "vue";
-import { கிளிமூக்கை_உருவாக்கு } from "./கிளிமூக்கு";
 import {
   கிளிமூக்கு,
   மரத்திலிருந்து_மொழிபெயர்ப்பு_அகராதி,
   மரம்_மொழிபெயர்ப்பு_அகராதி_வகை,
 } from "@lassi-js/kilimukku";
 
-export {version as பதிப்பு} from "@/பதிப்பு.js";
+import { கிளிமூக்கை_உருவாக்கு } from "./கிளிமூக்கு.js";
+
+export { version as பதிப்பு } from "@/பதிப்பு.js";
 
 export * from "@/எண்கள்.js";
 export * from "@/கருவிகள்.js";
 export * from "@/மொழிகள்.js";
-export * from "@/விருப்பங்கள்.js"
-export * from "@/கிளிமூக்கு.js"
+export * from "@/விருப்பங்கள்.js";
+export * from "@/கிளிமூக்கு.js";
 
 export default ({
   மொழி,
@@ -20,8 +21,7 @@ export default ({
   மூல்_மொழி,
   மூல்_மொழிபெயர்ப்புகள்,
   அடையாளம்,
-  நினைவிகள்
-  
+  நினைவிகள்,
 }: {
   மொழி: string;
   மாற்றுமொழிகள்?: string[];
@@ -51,7 +51,7 @@ export default ({
         மொழி,
         மாற்றுமொழிகள்,
         கிளி,
-        நினைவிகள்
+        நினைவிகள்,
       });
 
       செயலி.use(கிளிமூக்கு_);
