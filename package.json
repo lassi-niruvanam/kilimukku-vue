@@ -1,6 +1,6 @@
 {
   "name": "@lassi-js/kilimukku-vue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "விநியோகம்/குறியீட்டு.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "தூயமைப்படுத்து": "rimraf விநியோகம்",
     "தொகுப்பு": "pnpm புதுப்பிப்பு && pnpm தூயமைப்படுத்து && pnpm tspc -p tsconfig.json",
     "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint --ext .js,.ts மூலம் சோதனை",
-    "வெளியிடு": "pnpm சோதனை && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
+    "வெளியிடு": "pnpm தொகுப்பு && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
     "புதுப்பிப்பு": "pnpm genversion  --es6 --semi மூலம்/பதிப்பு.ts"
   },
   "keywords": [],
