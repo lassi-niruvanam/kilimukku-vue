@@ -15,19 +15,19 @@ export const nuchabäl_கண்டுப்பிடி = () => {
 export const மொழிகளைப்_பயன்படுத்து = () => {
   const nuchabäl = nuchabäl_கண்டுப்பிடி();
 
-  const { விரும்பின_மொழிகள் } = விருப்பங்களை_பயன்படுத்து();
-  const மொழி = computed(() => விரும்பின_மொழிகள்.value[0]);
-  const மாற்றுமொழிகள் = computed(() => விரும்பின_மொழிகள்.value.slice(1));
+  const { தேர்ந்தெடுத்தப்பட்ட_மொழிகள் } = விருப்பங்களை_பயன்படுத்து();
+  const மொழி = computed(() => தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value[0]);
+  const மாற்றுமொழிகள் = computed(() => தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value.slice(1));
 
   const மொழிகளை_தேர்ந்தெடுக்கொள்ளு = (மொழிகள்: string | string[]) => {
     if (Array.isArray(மொழிகள்)) {
       if (மொழிகள்.length) {
-        விரும்பின_மொழிகள்.value = மொழிகள்;
+        தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value = மொழிகள்;
       }
     } else {
-      விரும்பின_மொழிகள்.value = [
+      தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value = [
         மொழிகள்,
-        ...விரும்பின_மொழிகள்.value.filter((மொ) => மொ !== மொழிகள்),
+        ...தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value.filter((மொ) => மொ !== மொழிகள்),
       ];
     }
   };
@@ -36,13 +36,13 @@ export const மொழிகளைப்_பயன்படுத்து = () 
     அகராதி: Ref<{ [மொ: string]: string }>,
   ): ComputedRef<string | undefined> => {
     return computed(() => {
-      for (const மொ of விரும்பின_மொழிகள்.value) {
+      for (const மொ of தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value) {
         if (அகராதி.value[மொ]) return அகராதி.value[மொ];
       }
       const பிடித்த_எழுத்து = nuchabäl?.rutzibanemChabäl({
-        runuk: விரும்பின_மொழிகள்.value[0],
+        runuk: தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value[0],
       });
-      for (const மொ of விரும்பின_மொழிகள்.value) {
+      for (const மொ of தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value) {
         if (
           பிடித்த_எழுத்து &&
           பிடித்த_எழுத்து === nuchabäl?.rutzibanemChabäl({ runuk: மொ })

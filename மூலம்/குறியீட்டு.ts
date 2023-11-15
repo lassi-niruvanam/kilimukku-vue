@@ -8,6 +8,11 @@ import {
 
 export {version as பதிப்பு} from "@/பதிப்பு.js";
 
+export * from "@/எண்கள்.js";
+export * from "@/கருவிகள்.js";
+export * from "@/மொழிகள்.js";
+export * from "@/விருப்பங்கள்.js"
+
 export default ({
   மொழி,
   மாற்றுமொழிகள் = [],
