@@ -12,6 +12,7 @@ export * from "@/எண்கள்.js";
 export * from "@/கருவிகள்.js";
 export * from "@/மொழிகள்.js";
 export * from "@/விருப்பங்கள்.js"
+export * from "@/கிளிமூக்கு.js"
 
 export default ({
   மொழி,
