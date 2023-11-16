@@ -6,6 +6,7 @@ import {
   inject,
   onUnmounted,
   ref,
+  watch,
   watchEffect,
 } from "vue";
 
@@ -65,21 +66,10 @@ export const எண்களைப்_பயன்படுத்து = () => 
   });
 
   const எண்ணுரு = computed(() => {
-    return தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value || தானியங்கி_எண்ணுரு.value || "த";
+    return (
+      தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value || தானியங்கி_எண்ணுரு.value || "தமிழ்"
+    );
   });
-
-  if (nuchabäl) {
-    let nuchabäl_முறைமையை_மறந்துவிவடு: (() => void) | undefined;
-    watchEffect(() => {
-      nuchabäl_முறைமையை_மறந்துவிவடு = nuchabäl.tatzeqelbejRajilanïkChabäl({
-        runuk: மொழி.value,
-        sm: (மு?: string) => (தானியங்கி_எண்ணுரு.value = மு),
-      });
-    });
-    onUnmounted(() => {
-      if (nuchabäl_முறைமையை_மறந்துவிவடு) nuchabäl_முறைமையை_மறந்துவிவடு();
-    });
-  }
 
   const எண்ணை_வடிவூட்டு = (
     எண்: குறிப்பு_அல்லது_மதிப்பு<number>,
@@ -101,7 +91,7 @@ export const எண்களைப்_பயன்படுத்து = () => 
     const வடிவூட்டப்பட்ட_எண்_எழுத்து = computed(() => {
       return [...குறிப்பின்_மதிப்பை_பெறு(எண்)]
         .map((இ) => {
-          if (இ === " " || இ === "" || இ === "+") return இ;
+          if (["", " ", "+", "-", "(", ")"].includes(இ)) return இ;
           try {
             const எண்_ = நம்ம_எண்ணிக்கை.எண்ணுக்கு({ உரை: இ });
             return நம்ம_எண்ணிக்கை.உரைக்கு({

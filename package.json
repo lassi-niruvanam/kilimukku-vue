@@ -8,7 +8,7 @@
     "தூயமைப்படுத்து": "rimraf விநியோகம்",
     "தொகுப்பு": "pnpm புதுப்பிப்பு && pnpm தூயமைப்படுத்து && pnpm tspc -p tsconfig.json",
     "சோதனை": "vitest",
-    "coverage": "vitest run --coverage",
+    "போர்வை": "vitest run --coverage",
     "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint --ext .js,.ts,.vue மூலம் சோதனை",
     "வெளியிடு": "pnpm சோதனை && pnpm தொகுப்பு && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
     "புதுப்பிப்பு": "pnpm genversion  --es6 --semi மூலம்/பதிப்பு.ts"
