@@ -1,6 +1,6 @@
 import type { App } from "vue";
 
-import { ClientConstellation, générerClient, mandataire } from "@constl/ipa";
+import { ClientConstellation, générerClient } from "@constl/ipa";
 
 export default ({ விண்மீன் }: { விண்மீன்?: ClientConstellation }) => {
   return {
