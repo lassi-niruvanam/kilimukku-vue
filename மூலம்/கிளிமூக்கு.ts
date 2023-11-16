@@ -306,10 +306,8 @@ const மொழியாக்கம்_பயன்படுத்து = ({
     இடைச்செருகல்?: { [சாபி: string]: unknown } | number | unknown[],
     இ?: number,
   ): string => {
-    return மொ(சாபி,
-      இடைச்செருகல்,
-      இ).value
-  }
+    return மொ(சாபி, இடைச்செருகல், இ).value;
+  };
   return { மொ, $மொ };
 };
 
