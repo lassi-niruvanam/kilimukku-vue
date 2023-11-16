@@ -2,6 +2,7 @@ import { beforeEach, describe, test } from "vitest";
 import { VueWrapper, mount } from "@vue/test-utils";
 import { எண்களை_உருவாக்கு } from "@/குறியீட்டு.js";
 
+// @ts-ignore
 import சோதனை_கூறு from "./கூறுகள்/எண்கள்.vue";
 
 describe("எண்கள்", function () {

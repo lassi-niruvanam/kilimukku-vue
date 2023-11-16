@@ -3,6 +3,7 @@ import { beforeAll, describe, test } from "vitest";
 
 import { மொழிகளை_உருவாக்கு } from "../மூலம்/குறியீட்டு";
 
+// @ts-ignore
 import சோதனை_கூறு from "./கூறுகள்/மொழிகள்.vue";
 
 describe("மொழிகள்", function () {
