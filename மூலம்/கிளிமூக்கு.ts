@@ -301,8 +301,16 @@ const மொழியாக்கம்_பயன்படுத்து = ({
       ),
     ];
   });
-
-  return { மொ };
+  const $மொ = (
+    சாபி: string,
+    இடைச்செருகல்?: { [சாபி: string]: unknown } | number | unknown[],
+    இ?: number,
+  ): string => {
+    return மொ(சாபி,
+      இடைச்செருகல்,
+      இ).value
+  }
+  return { மொ, $மொ };
 };
 
 const கிடைக்கும்_மொழிகளை_பயன்படுத்து = ({
