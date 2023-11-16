@@ -1,14 +1,17 @@
 import { VueWrapper, mount } from "@vue/test-utils";
-import { afterAll, beforeAll, beforeEach, describe, test } from "vitest";
+import { afterAll, beforeAll, describe, test } from "vitest";
 
 import கிளிமூக்கை_உருவாக்கு from "@/குறியீட்டு.js";
-import சோதனை_கூறு from "./கூறுகள்/கிளிமூக்கு.vue";
 import விண்மீன்_உட்சேருகி from "./கருவிகள்/விண்மீன்-உட்சேருகி";
-import மூல்_மொழிபெயர்ப்புகள் from "./வளங்கள்/மொழிபெயர்ப்புகள்.json";
 import { கிளிமூக்கு } from "@lassi-js/kilimukku";
 import { client } from "@constl/utils-tests";
 import { générerClient, types } from "@constl/ipa";
 import { இதற்காக_காற்றிரு } from "./கருவிகள்/கருவிகள்";
+
+// @ts-ignore
+import சோதனை_கூறு from "./கூறுகள்/கிளிமூக்கு.vue";
+
+import மூல்_மொழிபெயர்ப்புகள் from "./வளங்கள்/மொழிபெயர்ப்புகள்.json";
 
 describe("கிளிமூக்கு", function () {
   let விண்மீனை_மறந்துவிடு: types.schémaFonctionOublier;
