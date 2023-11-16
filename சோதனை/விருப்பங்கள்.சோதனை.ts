@@ -31,11 +31,7 @@ describe("விருப்பங்கள்", function () {
         ],
       },
     });
-    expect(உறை.vm.தேர்ந்தெடுத்தப்பட்ட_மொழிகள்).toStrictEqual([
-      "fr",
-      "த",
-      "తె",
-    ]);
+    expect(உறை.vm.தேர்ந்தெடுத்தப்பட்ட_மொழிகள்).toStrictEqual(["fr", "த", "తె"]);
     expect(உறை.vm.தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு).toStrictEqual(undefined);
   });
 });
