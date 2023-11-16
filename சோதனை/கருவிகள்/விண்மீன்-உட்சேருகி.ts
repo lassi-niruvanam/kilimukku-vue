@@ -1,11 +1,13 @@
 import type { App } from "vue";
 
-import { mandataire } from "@constl/ipa";
+import { ClientConstellation, générerClient, mandataire } from "@constl/ipa";
 
-export default {
-  install: (app: App) => {
-    const client = mandataire.ipa.générerMandataireProc();
-    app.config.globalProperties.$constl = client;
-    app.provide("constl", client);
-  },
+export default ({ விண்மீன் }: { விண்மீன்?: ClientConstellation }) => {
+  return {
+    install: (செயலி: App) => {
+      const வாடிக்கையாளர் = விண்மீன் || générerClient({});
+      செயலி.config.globalProperties.$constl = வாடிக்கையாளர்;
+      செயலி.provide("constl", வாடிக்கையாளர்);
+    },
+  };
 };
