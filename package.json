@@ -1,6 +1,6 @@
 {
   "name": "@lassi-js/kilimukku-vue",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "விநியோகம்/குறியீட்டு.js",
   "type": "module",
@@ -10,7 +10,7 @@
     "சோதனை": "vitest",
     "போர்வை": "vitest run --coverage",
     "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint --ext .js,.ts,.vue மூலம் சோதனை",
-    "வெளியிடு": "pnpm சோதனை && pnpm தொகுப்பு && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
+    "வெளியிடு": "pnpm போர்வை && pnpm தொகுப்பு && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
     "புதுப்பிப்பு": "pnpm genversion  --es6 --semi மூலம்/பதிப்பு.ts"
   },
   "keywords": [],

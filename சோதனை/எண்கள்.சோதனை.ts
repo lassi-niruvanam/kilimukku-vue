@@ -1,6 +1,6 @@
 import { beforeEach, describe, test } from "vitest";
 import { VueWrapper, mount } from "@vue/test-utils";
-import { எண்களை_உருவாக்கு } from "@/குறியீட்டு.ts";
+import { எண்களை_உருவாக்கு } from "@/குறியீட்டு.js";
 
 import சோதனை_கூறு from "./கூறுகள்/எண்கள்.vue";
 
