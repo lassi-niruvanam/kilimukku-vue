@@ -523,9 +523,6 @@ export const கிளிமூக்கை_உருவாக்கு = ({
 }) => {
   return {
     install: (செயலி: App) => {
-      const விண்மீன் = செயலி.config.globalProperties.$constl;
-      if (!விண்மீன்) throw Error("விண்மீன் கிடைக்கதில்லை.");
-
       const எண்ணிக்கை = செயலி.config.globalProperties.$எண்ணிக்கை;
       if (!எண்ணிக்கை) {
         const எண்கள் = எண்களை_உருவாக்கு({ மொழி, மாற்றுமொழிகள், நினைவிகள் });
