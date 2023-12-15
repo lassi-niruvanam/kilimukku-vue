@@ -4,7 +4,7 @@
 <script setup lang="ts">
 import type {கிளிமூக்கு as கிளிமூக்கு_வகை} from "@lassi-js/kilimukku";
 import {கிளிமூக்கை_பயன்படுத்து, மொழிகளைப்_பயன்படுத்து} from "@/குறியீட்டு";
-import {inject, ref} from "vue";
+import {inject} from "vue";
 
 const கிளிமூக்கு = inject<கிளிமூக்கு_வகை>("கிளிமூக்கு");
 
