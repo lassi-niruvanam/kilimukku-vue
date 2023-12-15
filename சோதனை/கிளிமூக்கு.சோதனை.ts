@@ -15,6 +15,7 @@ import மூல்_மொழிபெயர்ப்புகள் from "./வ
 
 describe("கிளிமூக்கு", function () {
   let விண்மீனை_மறந்துவிடு: types.schémaFonctionOublier;
+  let அடையாளம்: string;
 
   let உறை: VueWrapper<any, any>;
   beforeAll(async () => {
@@ -24,7 +25,7 @@ describe("கிளிமூக்கு", function () {
     });
     விண்மீனை_மறந்துவிடு = fOublier;
     const விண்மீன் = clients[0];
-    const அடையாளம் = await கிளிமூக்கு.உருவாக்கு({ விண்மீன் });
+    அடையாளம் = await கிளிமூக்கு.உருவாக்கு({ விண்மீன் });
     உறை = mount(சோதனை_கூறு, {
       global: {
         plugins: [
@@ -112,8 +113,16 @@ describe("கிளிமூக்கு", function () {
     });
   });
 
-  test("மொழியாக்கம்_பயன்படுத்து", async ({ expect }) => {
+  test("மொழியாக்கம் பயன்படுத்து", async ({ expect }) => {
     await இதற்காக_காற்றிரு(() => உறை.vm.தலைப்பு !== "விண்மீன்.பெயர்");
     expect(உறை.vm.தலைப்பு).toBe("விண்மீன்");
   });
+
+  test("புதுச பரிந்துரை", async ({ expect }) => {
+    உறை.vm.மொழிகளை_தேர்ந்தெடுக்கொள்ளு("ខ្ចែរ")
+    await இதற்காக_காற்றிரு(() => உறை.vm.தலைப்பு !== "விண்மீன்");
+
+    expect(உறை.get('[data-test="தலைப்பு"]').text()).toBe("តារានិករ")
+
+  })
 });
