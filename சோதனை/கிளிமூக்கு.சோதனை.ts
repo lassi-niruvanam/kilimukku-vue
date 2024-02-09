@@ -4,8 +4,8 @@ import { afterAll, beforeAll, describe, test } from "vitest";
 import கிளிமூக்கை_உருவாக்கு from "@/குறியீட்டு.js";
 import விண்மீன்_உட்சேருகி from "./கருவிகள்/விண்மீன்-உட்சேருகி";
 import { கிளிமூக்கு } from "@lassi-js/kilimukku";
-import { client } from "@constl/utils-tests";
-import { générerClient, types } from "@constl/ipa";
+import { constellation } from "@constl/utils-tests";
+import { créerConstellation, types } from "@constl/ipa";
 import { இதற்காக_காற்றிரு } from "./கருவிகள்/கருவிகள்";
 
 // @ts-ignore
@@ -19,9 +19,9 @@ describe("கிளிமூக்கு", function () {
 
   let உறை: VueWrapper<any, any>;
   beforeAll(async () => {
-    const { clients, fOublier } = await client.générerClients({
+    const { clients, fOublier } = await constellation.créerConstellationsTest({
       n: 1,
-      générerClient,
+      créerConstellation,
     });
     விண்மீனை_மறந்துவிடு = fOublier;
     const விண்மீன் = clients[0];
