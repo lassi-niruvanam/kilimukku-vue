@@ -20,7 +20,7 @@ jobs:
         with:
           version: latest
       - run: pnpm install
-      - run: pnpm test
+      - run: pnpm சோதனை
       - run: git config --global user.email "bot@example.com"
       - run: git config --global user.name "Github Action"
       - run: |
