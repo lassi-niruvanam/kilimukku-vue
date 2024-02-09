@@ -10,13 +10,13 @@ dependencies:
     version: 2.0.9
   '@lassi-js/kili':
     specifier: ^0.3.6
-    version: 0.3.6(@constl/ipa@1.0.1-76af3ada9.0)
+    version: 0.3.6(@constl/ipa@1.0.1-ec2b9d2da.0)
   '@lassi-js/kilimukku':
     specifier: 1.1.2-1e580ac.0
     version: 1.1.2-1e580ac.0(react-native@0.73.4)(wrtc@0.4.7)
   ennikkai:
     specifier: ^2.2.5
-    version: 2.2.5(@constl/ipa@1.0.1-76af3ada9.0)
+    version: 2.2.5(@constl/ipa@1.0.1-ec2b9d2da.0)
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
@@ -25,15 +25,15 @@ dependencies:
     version: 4.17.21
   nuchabal:
     specifier: ^3.1.8
-    version: 3.1.8(@constl/ipa@1.0.1-76af3ada9.0)
+    version: 3.1.8(@constl/ipa@1.0.1-ec2b9d2da.0)
   uuid:
     specifier: ^9.0.1
     version: 9.0.1
 
 devDependencies:
   '@constl/ipa':
-    specifier: 1.0.1-76af3ada9.0
-    version: 1.0.1-76af3ada9.0(react-native@0.73.4)(wrtc@0.4.7)
+    specifier: 1.0.1-ec2b9d2da.0
+    version: 1.0.1-ec2b9d2da.0(react-native@0.73.4)(wrtc@0.4.7)
   '@constl/utils-tests':
     specifier: ^1.1.0
     version: 1.1.0(react-native@0.73.4)
@@ -1655,6 +1655,79 @@ packages:
       - react-native
       - supports-color
       - utf-8-validate
+    dev: false
+
+  /@constl/ipa@1.0.1-ec2b9d2da.0(react-native@0.73.4)(wrtc@0.4.7):
+    resolution: {integrity: sha512-fxtECyyQUN5kUGOoggXLhK6PWUjQTnPNN5diR33JPMH1LL1eWMv2cKIqtZGRZ5ozHYnwszAsonSEPIvAMHQVNA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      wrtc: ^0.4.7
+    dependencies:
+      '@achingbrain/nat-port-mapper': 1.0.8
+      '@chainsafe/libp2p-gossipsub': 11.2.1
+      '@chainsafe/libp2p-noise': 15.0.0
+      '@chainsafe/libp2p-yamux': 6.0.2
+      '@chriscdn/promise-semaphore': 2.0.9
+      '@constl/bohr-db': 1.1.0(react-native@0.73.4)
+      '@constl/electron-webrtc-relay': 0.2.3
+      '@constl/mandataire': 0.1.15
+      '@constl/utils-ipa': 1.0.0
+      '@helia/block-brokers': 2.0.1
+      '@helia/unixfs': 3.0.0
+      '@ipld/dag-cbor': 9.1.0
+      '@lassi-js/kili': 0.3.6(@constl/ipa@1.0.1-ec2b9d2da.0)
+      '@libp2p/bootstrap': 10.0.15
+      '@libp2p/circuit-relay-v2': 1.0.15
+      '@libp2p/identify': 1.0.14
+      '@libp2p/interface-transport': 4.0.3
+      '@libp2p/tcp': 9.0.15
+      '@libp2p/webrtc': 4.0.19(react-native@0.73.4)
+      '@libp2p/webrtc-direct': 6.0.0
+      '@libp2p/websockets': 8.0.15
+      '@libp2p/webtransport': 4.0.19
+      '@localfirst/auth': 5.4.1
+      '@localfirst/crypto': 5.4.1
+      '@orbitdb/core': 2.0.1
+      '@orbitdb/feed-db': 1.0.0(react-native@0.73.4)
+      '@orbitdb/ordered-keyvalue-db': 1.0.0(react-native@0.73.4)
+      '@orbitdb/set-db': 1.0.0(react-native@0.73.4)
+      ajv: 8.12.0
+      approx-string-match: 2.0.0
+      axios: 1.6.7
+      blockstore-level: 1.1.7
+      browser-fs-access: 0.35.0
+      chokidar: 3.6.0
+      crypto-js: 4.2.0
+      deep-equal: 2.2.3
+      deepcopy: 2.1.0
+      ennikkai: 2.2.5(@constl/ipa@1.0.1-ec2b9d2da.0)
+      env-paths: 3.0.0
+      events: 3.3.0
+      genversion: 3.2.0
+      geojson-validation: 1.0.2
+      helia: 3.0.1(react-native@0.73.4)
+      indexed-db-stream: 1.0.0
+      iso-constants: github.com/inverted-capital/iso-constants/2af6fdfb2cacaa03ebd58543703918783e62649f
+      it-to-buffer: 4.0.5
+      jszip: 3.10.1
+      lodash: 4.17.21
+      multiformats: 13.0.1
+      node-pre-gyp: 0.17.0
+      prom-client: 15.1.0
+      ssim: 0.0.0
+      tslib: 2.6.2
+      uint8arrays: 5.0.2
+      uuid: 9.0.1
+      wherearewe: 2.0.1
+      wrtc: 0.4.7
+      xlsx: '@cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz'
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - encoding
+      - react-native
+      - supports-color
+      - utf-8-validate
 
   /@constl/mandataire@0.1.15:
     resolution: {integrity: sha512-82UBVdQEgKFiCHxMt8CXX6kk0ZNpRzzstt60znPvIZLndHBPtqruynRpmOwje54vHh3ojT4ltnMrbzN+KjpQng==}
@@ -2228,6 +2301,20 @@ packages:
     dependencies:
       '@achingbrain/nat-port-mapper': 1.0.8
       '@constl/ipa': 1.0.1-76af3ada9.0(react-native@0.73.4)(wrtc@0.4.7)
+      '@constl/utils-ipa': 0.2.4
+      '@orbitdb/core': 1.0.2
+      deepcopy: 2.1.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@lassi-js/kili@0.3.6(@constl/ipa@1.0.1-ec2b9d2da.0):
+    resolution: {integrity: sha512-tahzK8iaCfg/sNAqbZKnow5W1PoQDXiTBXvFkTUqwn6zPbbvY/a8L6kDWm6ZwWqWQ4VupqC59kMSslLgGuNOAA==}
+    peerDependencies:
+      '@constl/ipa': ^0.9.15
+    dependencies:
+      '@achingbrain/nat-port-mapper': 1.0.8
+      '@constl/ipa': 1.0.1-ec2b9d2da.0(react-native@0.73.4)(wrtc@0.4.7)
       '@constl/utils-ipa': 0.2.4
       '@orbitdb/core': 1.0.2
       deepcopy: 2.1.0
@@ -5024,6 +5111,19 @@ packages:
       events: 3.3.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /ennikkai@2.2.5(@constl/ipa@1.0.1-ec2b9d2da.0):
+    resolution: {integrity: sha512-zzyBrfQlzTJKv9OhzdC4+QbqIaqOsmjsJf4lxqGF6PSuDaPDJewKSUOEcE90sOU3rcMWE9IFtxwgCq+Jw4t7lA==}
+    peerDependencies:
+      '@constl/ipa': ^0.9.6
+    dependencies:
+      '@constl/ipa': 1.0.1-ec2b9d2da.0(react-native@0.73.4)(wrtc@0.4.7)
+      '@lassi-js/kili': 0.3.6(@constl/ipa@1.0.1-ec2b9d2da.0)
+      deepmerge: 4.3.1
+      events: 3.3.0
+    transitivePeerDependencies:
+      - supports-color
 
   /entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
@@ -7453,13 +7553,13 @@ packages:
       gauge: 2.7.4
       set-blocking: 2.0.0
 
-  /nuchabal@3.1.8(@constl/ipa@1.0.1-76af3ada9.0):
+  /nuchabal@3.1.8(@constl/ipa@1.0.1-ec2b9d2da.0):
     resolution: {integrity: sha512-DoTViqE8cAAn8aRWgIQWcK1q4KswRYbaIYvwn6objPGebgIgXh+bi5Mqu3Gkz1n52Q0GTmcNxE4Le/HHtIR7cw==}
     peerDependencies:
       '@constl/ipa': ^0.9.13
     dependencies:
-      '@constl/ipa': 1.0.1-76af3ada9.0(react-native@0.73.4)(wrtc@0.4.7)
-      '@lassi-js/kili': 0.3.6(@constl/ipa@1.0.1-76af3ada9.0)
+      '@constl/ipa': 1.0.1-ec2b9d2da.0(react-native@0.73.4)(wrtc@0.4.7)
+      '@lassi-js/kili': 0.3.6(@constl/ipa@1.0.1-ec2b9d2da.0)
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
@@ -9165,7 +9265,7 @@ packages:
   /wide-align@1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
 
   /wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
