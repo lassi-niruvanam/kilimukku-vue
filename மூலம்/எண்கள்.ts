@@ -6,7 +6,6 @@ import {
   inject,
   onUnmounted,
   ref,
-  watch,
   watchEffect,
 } from "vue";
 
