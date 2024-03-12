@@ -69,7 +69,7 @@ devDependencies:
     version: 3.2.0
   happy-dom:
     specifier: ^13.3.8
-    version: 13.7.7
+    version: 13.7.8
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -90,7 +90,7 @@ devDependencies:
     version: 5.1.6
   vitest:
     specifier: ^1.3.0
-    version: 1.3.1(happy-dom@13.7.7)
+    version: 1.3.1(happy-dom@13.7.8)
   vue:
     specifier: ^3.4.19
     version: 3.4.21(typescript@5.4.2)
@@ -2531,8 +2531,8 @@ packages:
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
 
-  /@jridgewell/source-map@0.3.5:
-    resolution: {integrity: sha512-UTYAUj/wviwdsMfzoSJspJxbkH5o1snzwX0//0ENX1u/55kkZZkcTZP6u9bwKGkv+dkk9at4m1Cpt0uY80kcpQ==}
+  /@jridgewell/source-map@0.3.6:
+    resolution: {integrity: sha512-1ZJTZebgqllO79ue2bm3rIGud/bOe0pP5BjSRCRxxYkEZS8STV7zN84UBbiYu7jy+eCKSnVIUgoWWE/tt+shMQ==}
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
@@ -4219,7 +4219,7 @@ packages:
       magicast: 0.3.3
       picocolors: 1.0.0
       test-exclude: 6.0.0
-      vitest: 1.3.1(happy-dom@13.7.7)
+      vitest: 1.3.1(happy-dom@13.7.8)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5996,8 +5996,8 @@ packages:
       sparse-array: 1.3.2
       uint8arrays: 5.0.2
 
-  /happy-dom@13.7.7:
-    resolution: {integrity: sha512-JPwbDUBXhb9jIf6+Wat0QFhTsbSKFq2DYK4wIK27F508gV8qU5tLScpQaNznV1b4MUgLQlN9xogaHJpCFyt89Q==}
+  /happy-dom@13.7.8:
+    resolution: {integrity: sha512-dnvgCiPPfXXts+AW1DVAoDa9nPmI48YPHUv34L6pmjv2lwNZte8OwsK9SajEXENfibS8uo1zG7xJwlW/NXlDxQ==}
     engines: {node: '>=16.0.0'}
     dependencies:
       entities: 4.5.0
@@ -9017,7 +9017,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      '@jridgewell/source-map': 0.3.5
+      '@jridgewell/source-map': 0.3.6
       acorn: 8.11.3
       commander: 2.20.3
       source-map-support: 0.5.21
@@ -9331,7 +9331,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.3.1(happy-dom@13.7.7):
+  /vitest@1.3.1(happy-dom@13.7.8):
     resolution: {integrity: sha512-/1QJqXs8YbCrfv/GPQ05wAZf2eakUPLPa18vkJAKE7RXOKfVHqMZZ1WlTjiwl6Gcn65M5vpNUB6EFLnEdRdEXQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -9365,7 +9365,7 @@ packages:
       chai: 4.4.1
       debug: 4.3.4
       execa: 8.0.1
-      happy-dom: 13.7.7
+      happy-dom: 13.7.8
       local-pkg: 0.5.0
       magic-string: 0.30.7
       pathe: 1.1.2
