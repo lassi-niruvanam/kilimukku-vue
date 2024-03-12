@@ -69,7 +69,7 @@ devDependencies:
     version: 3.2.0
   happy-dom:
     specifier: ^13.3.8
-    version: 13.8.1
+    version: 13.8.2
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
@@ -90,7 +90,7 @@ devDependencies:
     version: 5.1.6
   vitest:
     specifier: ^1.3.0
-    version: 1.3.1(happy-dom@13.8.1)
+    version: 1.3.1(happy-dom@13.8.2)
   vue:
     specifier: ^3.4.19
     version: 3.4.21(typescript@5.4.2)
@@ -308,8 +308,8 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/helper-define-polyfill-provider@0.6.0(@babel/core@7.23.9):
-    resolution: {integrity: sha512-efwOM90nCG6YeT8o3PCyBVSxRfmILxCNL+TNI8CGQl7a62M0Wd9VkV+XHwIlkOz1r4b+lxu6gBjdWiOMdUCrCQ==}
+  /@babel/helper-define-polyfill-provider@0.6.1(@babel/core@7.23.9):
+    resolution: {integrity: sha512-o7SDgTJuvx5vLKD6SFvkydkSMBvahDKGiNJzG22IZYXhiqoe9efY7zocICBgzHV4IRg5wdgl2nEL/tulKIEIbA==}
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
     dependencies:
@@ -1374,7 +1374,7 @@ packages:
       '@babel/core': 7.23.9
       '@babel/helper-module-imports': 7.22.15
       '@babel/helper-plugin-utils': 7.24.0
-      babel-plugin-polyfill-corejs2: 0.4.9(@babel/core@7.23.9)
+      babel-plugin-polyfill-corejs2: 0.4.10(@babel/core@7.23.9)
       babel-plugin-polyfill-corejs3: 0.9.0(@babel/core@7.23.9)
       babel-plugin-polyfill-regenerator: 0.5.5(@babel/core@7.23.9)
       semver: 6.3.1
@@ -1572,7 +1572,7 @@ packages:
       '@babel/plugin-transform-unicode-regex': 7.23.3(@babel/core@7.23.9)
       '@babel/plugin-transform-unicode-sets-regex': 7.23.3(@babel/core@7.23.9)
       '@babel/preset-modules': 0.1.6-no-external-plugins(@babel/core@7.23.9)
-      babel-plugin-polyfill-corejs2: 0.4.9(@babel/core@7.23.9)
+      babel-plugin-polyfill-corejs2: 0.4.10(@babel/core@7.23.9)
       babel-plugin-polyfill-corejs3: 0.9.0(@babel/core@7.23.9)
       babel-plugin-polyfill-regenerator: 0.5.5(@babel/core@7.23.9)
       core-js-compat: 3.36.0
@@ -4219,7 +4219,7 @@ packages:
       magicast: 0.3.3
       picocolors: 1.0.0
       test-exclude: 6.0.0
-      vitest: 1.3.1(happy-dom@13.8.1)
+      vitest: 1.3.1(happy-dom@13.8.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4575,14 +4575,14 @@ packages:
     dependencies:
       '@babel/core': 7.24.0
 
-  /babel-plugin-polyfill-corejs2@0.4.9(@babel/core@7.23.9):
-    resolution: {integrity: sha512-BXIWIaO3MewbXWdJdIGDWZurv5OGJlFNo7oy20DpB3kWDVJLcY2NRypRsRUbRe5KMqSNLuOGnWTFQQtY5MAsRw==}
+  /babel-plugin-polyfill-corejs2@0.4.10(@babel/core@7.23.9):
+    resolution: {integrity: sha512-rpIuu//y5OX6jVU+a5BCn1R5RSZYWAl2Nar76iwaOdycqb6JPxediskWFMMl7stfwNJR4b7eiQvh5fB5TEQJTQ==}
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
     dependencies:
       '@babel/compat-data': 7.23.5
       '@babel/core': 7.23.9
-      '@babel/helper-define-polyfill-provider': 0.6.0(@babel/core@7.23.9)
+      '@babel/helper-define-polyfill-provider': 0.6.1(@babel/core@7.23.9)
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -5996,8 +5996,8 @@ packages:
       sparse-array: 1.3.2
       uint8arrays: 5.0.2
 
-  /happy-dom@13.8.1:
-    resolution: {integrity: sha512-SSioEMa3oe1xd1kXPfJ6T5u1xk5fcltnerYi/1VavD0Y2jZ/EEoQyHRG2QGialdyvqZ83LTNHdQrVcZifchQUg==}
+  /happy-dom@13.8.2:
+    resolution: {integrity: sha512-u9KxyeQNIzkJDR2iCitKeS5Uy0YUv5eOntpO8e7ZzbDVv4kP5Y77Zo2LnZitwMrss/1pY2Uc2e5qOVGkiKE5Gg==}
     engines: {node: '>=16.0.0'}
     dependencies:
       entities: 4.5.0
@@ -9331,7 +9331,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitest@1.3.1(happy-dom@13.8.1):
+  /vitest@1.3.1(happy-dom@13.8.2):
     resolution: {integrity: sha512-/1QJqXs8YbCrfv/GPQ05wAZf2eakUPLPa18vkJAKE7RXOKfVHqMZZ1WlTjiwl6Gcn65M5vpNUB6EFLnEdRdEXQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -9365,7 +9365,7 @@ packages:
       chai: 4.4.1
       debug: 4.3.4
       execa: 8.0.1
-      happy-dom: 13.8.1
+      happy-dom: 13.8.2
       local-pkg: 0.5.0
       magic-string: 0.30.7
       pathe: 1.1.2
