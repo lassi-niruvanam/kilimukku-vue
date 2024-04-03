@@ -8,7 +8,6 @@ import { constellation } from "@constl/utils-tests";
 import { créerConstellation, types } from "@constl/ipa";
 import { இதற்காக_காற்றிரு } from "./கருவிகள்/கருவிகள்";
 
-// @ts-expect-error எனென்று தெரியில்லை
 import சோதனை_கூறு from "./கூறுகள்/கிளிமூக்கு.vue";
 
 import மூல்_மொழிபெயர்ப்புகள் from "./வளங்கள்/மொழிபெயர்ப்புகள்.json";
