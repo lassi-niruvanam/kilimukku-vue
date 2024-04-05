@@ -12,8 +12,8 @@ dependencies:
     specifier: ^0.3.10
     version: 0.3.10(@constl/ipa@1.0.10)
   '@lassi-js/kilimukku':
-    specifier: 1.1.5
-    version: 1.1.5(react-native@0.73.6)(wrtc@0.4.7)
+    specifier: 1.1.6
+    version: 1.1.6(react-native@0.73.6)(wrtc@0.4.7)
   ennikkai:
     specifier: ^2.2.7
     version: 2.2.7(@constl/ipa@1.0.10)
@@ -2430,12 +2430,25 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@lassi-js/kilimukku@1.1.5(react-native@0.73.6)(wrtc@0.4.7):
-    resolution: {integrity: sha512-wEU49rHGp0wX6UZgLvNi1/3rDghjOvfRMH0sJyceMM3TOcgXcnfapzgtlt3yRmm9XdcSnX9A5SKqiINnYHve2w==}
+  /@lassi-js/kili@0.3.11(@constl/ipa@1.0.10):
+    resolution: {integrity: sha512-7ujEvbCg0kdp6U+zJmFAE+wOfNV6tHm8ssuoPYOUM7bJivFrQdLYv2D8MyPhsaWX6eQzVqBuDQqZqEyoQ9td/g==}
+    peerDependencies:
+      '@constl/ipa': ^1.0.5
     dependencies:
       '@constl/ipa': 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
       '@constl/utils-ipa': 1.0.0
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.10)
+      '@orbitdb/core': 2.1.0
+      deepcopy: 2.1.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@lassi-js/kilimukku@1.1.6(react-native@0.73.6)(wrtc@0.4.7):
+    resolution: {integrity: sha512-rm9vznG0FEKJ6CcQvknVGUngH6LwNBAkEUZowGl4WjS7qj5o+B1oijyc/94XVFOZnV2RjaBQ8dSd9XY+WZ091Q==}
+    dependencies:
+      '@constl/ipa': 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
+      '@constl/utils-ipa': 1.0.0
+      '@lassi-js/kili': 0.3.11(@constl/ipa@1.0.10)
       uuid: 9.0.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
