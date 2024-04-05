@@ -10,13 +10,13 @@ dependencies:
     version: 2.0.9
   '@lassi-js/kili':
     specifier: ^0.3.10
-    version: 0.3.10(@constl/ipa@1.0.9)
+    version: 0.3.10(@constl/ipa@1.0.10)
   '@lassi-js/kilimukku':
     specifier: 1.1.5
     version: 1.1.5(react-native@0.73.6)(wrtc@0.4.7)
   ennikkai:
     specifier: ^2.2.7
-    version: 2.2.7(@constl/ipa@1.0.9)
+    version: 2.2.7(@constl/ipa@1.0.10)
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
@@ -25,15 +25,15 @@ dependencies:
     version: 4.17.21
   nuchabal:
     specifier: ^3.2.2
-    version: 3.2.2(@constl/ipa@1.0.9)
+    version: 3.2.2(@constl/ipa@1.0.10)
   uuid:
     specifier: ^9.0.1
     version: 9.0.1
 
 devDependencies:
   '@constl/ipa':
-    specifier: 1.0.9
-    version: 1.0.9(react-native@0.73.6)(wrtc@0.4.7)
+    specifier: 1.0.10
+    version: 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
   '@constl/utils-tests':
     specifier: ^1.2.5
     version: 1.2.5(react-native@0.73.6)
@@ -1785,8 +1785,8 @@ packages:
       - supports-color
       - utf-8-validate
 
-  /@constl/ipa@1.0.9(react-native@0.73.6)(wrtc@0.4.7):
-    resolution: {integrity: sha512-M+xWmtdZ/LSk2QKAt/qWoAtXesJJyu4uFBl6k3hz3yXhaMNTx1EVSxqTSdH/wSC2lg9WwwYBplqhmEtmDIj99g==}
+  /@constl/ipa@1.0.10(react-native@0.73.6)(wrtc@0.4.7):
+    resolution: {integrity: sha512-1dDCP/81aZJWRF3YhXeqnqGMUObzKweJNxK8JgWecnA7bdzeqt3eBUnG/g1fZHIBHeX2ibjWaX1EFdOhi4B98Q==}
     engines: {node: '>=20'}
     peerDependencies:
       wrtc: ^0.4.7
@@ -1801,7 +1801,7 @@ packages:
       '@helia/block-brokers': 2.0.3
       '@helia/unixfs': 3.0.2
       '@ipld/dag-cbor': 9.2.0
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.9)
+      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.10)
       '@libp2p/autonat': 1.0.14
       '@libp2p/bootstrap': 10.0.17
       '@libp2p/circuit-relay-v2': 1.0.17
@@ -1831,7 +1831,7 @@ packages:
       crypto-js: 4.2.0
       deep-equal: 2.2.3
       deepcopy: 2.1.0
-      ennikkai: 2.2.7(@constl/ipa@1.0.9)
+      ennikkai: 2.2.7(@constl/ipa@1.0.10)
       env-paths: 3.0.0
       events: 3.3.0
       genversion: 3.2.0
@@ -2418,12 +2418,12 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@lassi-js/kili@0.3.10(@constl/ipa@1.0.9):
+  /@lassi-js/kili@0.3.10(@constl/ipa@1.0.10):
     resolution: {integrity: sha512-TC0dwRgPsK6AoVpTyTa7lgVZpkD5JH+W/Z/InoNc5pNSKHwfDONMc3+CphHvos5cB/KHV4cinCbuKrHOlkEthA==}
     peerDependencies:
       '@constl/ipa': ^1.0.5
     dependencies:
-      '@constl/ipa': 1.0.9(react-native@0.73.6)(wrtc@0.4.7)
+      '@constl/ipa': 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
       '@constl/utils-ipa': 1.0.0
       '@orbitdb/core': 2.1.0
       deepcopy: 2.1.0
@@ -2433,9 +2433,9 @@ packages:
   /@lassi-js/kilimukku@1.1.5(react-native@0.73.6)(wrtc@0.4.7):
     resolution: {integrity: sha512-wEU49rHGp0wX6UZgLvNi1/3rDghjOvfRMH0sJyceMM3TOcgXcnfapzgtlt3yRmm9XdcSnX9A5SKqiINnYHve2w==}
     dependencies:
-      '@constl/ipa': 1.0.9(react-native@0.73.6)(wrtc@0.4.7)
+      '@constl/ipa': 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
       '@constl/utils-ipa': 1.0.0
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.9)
+      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.10)
       uuid: 9.0.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
@@ -3844,7 +3844,7 @@ packages:
     resolution: {integrity: sha512-ib5K4cIDR4Ro5SR3Sx/LROkMDa0BHz0OPaCBL/OSPDsAXEGZ3/KQeS6poBKYVN7BfjXDL9lWNwzyHVgt/wkyCw==}
     dependencies:
       '@types/dns-packet': 5.6.5
-      '@types/node': 20.12.3
+      '@types/node': 20.12.4
 
   /@types/node@20.12.3:
     resolution: {integrity: sha512-sD+ia2ubTeWrOu+YMF+MTAB7E+O7qsMqAbMfW7DG3K1URwhZ5hN1pLlRVGbf4wDFzSfikL05M17EyorS86jShw==}
@@ -3885,7 +3885,7 @@ packages:
   /@types/ws@8.5.10:
     resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
     dependencies:
-      '@types/node': 20.12.3
+      '@types/node': 20.12.4
 
   /@types/yargs-parser@21.0.3:
     resolution: {integrity: sha512-I4q9QU9MQv4oEOz4tAHJtNz1cwuLxn2F3xcc2iV5WdqLPpUnj30aUuxt1mAxYTG+oe8CZMV/+6rU4S4gRDzqtQ==}
@@ -5365,13 +5365,13 @@ packages:
     dependencies:
       once: 1.4.0
 
-  /ennikkai@2.2.7(@constl/ipa@1.0.9):
+  /ennikkai@2.2.7(@constl/ipa@1.0.10):
     resolution: {integrity: sha512-LfwBjW3IC4aOstvGLoHQ4rWeK9Y5OplHHfjsozbMbaplczn/kKnpXQ2gqZpfkZRYNOL5CSp9nYQb9XW5++nxFQ==}
     peerDependencies:
       '@constl/ipa': ^1.0.0
     dependencies:
-      '@constl/ipa': 1.0.9(react-native@0.73.6)(wrtc@0.4.7)
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.9)
+      '@constl/ipa': 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
+      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.10)
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
@@ -8033,13 +8033,13 @@ packages:
       gauge: 2.7.4
       set-blocking: 2.0.0
 
-  /nuchabal@3.2.2(@constl/ipa@1.0.9):
+  /nuchabal@3.2.2(@constl/ipa@1.0.10):
     resolution: {integrity: sha512-stQS0BCDNE55Ya2vNjZjOre8YHJp7hZRwVl2+w5iYW/eSqDJRJev/PYjOct8NoZZZSdC+YJJQFmlNp+lRS9HZw==}
     peerDependencies:
       '@constl/ipa': ^1.0.0
     dependencies:
-      '@constl/ipa': 1.0.9(react-native@0.73.6)(wrtc@0.4.7)
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.9)
+      '@constl/ipa': 1.0.10(react-native@0.73.6)(wrtc@0.4.7)
+      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.10)
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
@@ -8544,7 +8544,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 20.12.3
+      '@types/node': 20.12.4
       long: 5.2.3
 
   /protons-runtime@5.4.0:
@@ -9961,7 +9961,7 @@ packages:
   /wide-align@1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
 
   /wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
