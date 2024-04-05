@@ -27,7 +27,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@constl/ipa": "1.0.9",
+    "@constl/ipa": "1.0.10",
     "@constl/utils-tests": "^1.2.5",
     "@types/js-cookie": "^3.0.6",
     "@types/lodash": "^4.17.0",
