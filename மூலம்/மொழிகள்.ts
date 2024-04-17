@@ -38,9 +38,10 @@ export const மொழிகளைப்_பயன்படுத்து = () 
   };
 
   const அகராதியிலிருந்து_மொழிபெயர்ப்பு = (
-    அகராதி: Ref<{ [மொ: string]: string }>,
+    அகராதி: Ref<{ [மொ: string]: string } | undefined>,
   ): ComputedRef<string | undefined> => {
     return computed(() => {
+      if (!அகராதி.value) return undefined;
       for (const மொ of தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value) {
         if (அகராதி.value[மொ]) return அகராதி.value[மொ];
       }
