@@ -48,12 +48,13 @@ export const மொழிகளைப்_பயன்படுத்து = () 
       const பிடித்த_எழுத்து = nuchabäl?.rutzibanemChabäl({
         runuk: தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value[0],
       });
-      for (const மொ of தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value) {
-        if (
-          பிடித்த_எழுத்து &&
-          பிடித்த_எழுத்து === nuchabäl?.rutzibanemChabäl({ runuk: மொ })
-        )
-          return அகராதி.value[மொ];
+      if (பிடித்த_எழுத்து) {
+        for (const மொ of தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value) {
+          if (
+            பிடித்த_எழுத்து === nuchabäl?.rutzibanemChabäl({ runuk: மொ })
+          )
+            return அகராதி.value[மொ];
+        }
       }
       return Object.values(அகராதி.value)[0];
     });
