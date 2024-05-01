@@ -21,11 +21,11 @@ describe("மொழிகள்", function () {
   test("nuch'ab'äl கிடைக்கும்", async ({ expect }) => {
     expect(உறை.vm.nuchabäl).not.toBeUndefined();
   });
-  
+
   test("ஆரம்பத்தில் அகராதியிலிருந்து மொழிபெயர்ப்பு", async ({ expect }) => {
     expect(உறை.vm.பெயர்).toBe("kilimukku");
   });
-  
+
   test("விரும்பின மொழி கிடைத்தது", async ({ expect }) => {
     expect(உறை.vm.மொழி).toBe("fr");
   });
