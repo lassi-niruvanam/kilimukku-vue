@@ -50,9 +50,7 @@ export const மொழிகளைப்_பயன்படுத்து = () 
       });
       if (பிடித்த_எழுத்து) {
         for (const மொ of தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value) {
-          if (
-            பிடித்த_எழுத்து === nuchabäl?.rutzibanemChabäl({ runuk: மொ })
-          )
+          if (பிடித்த_எழுத்து === nuchabäl?.rutzibanemChabäl({ runuk: மொ }))
             return அகராதி.value[மொ];
         }
       }
