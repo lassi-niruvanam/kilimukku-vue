@@ -3,7 +3,6 @@ import { describe, test } from "vitest";
 
 import { விருப்பங்களை_உருவாக்கு } from "../மூலம்/குறியீட்டு";
 
-// @ts-ignore
 import சோதனை_கூறு from "./கூறுகள்/விருப்பங்கள்.vue";
 
 describe("விருப்பங்கள்", function () {
