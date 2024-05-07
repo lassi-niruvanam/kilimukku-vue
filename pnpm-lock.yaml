@@ -19,7 +19,7 @@ importers:
         version: 1.1.6(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))
       ennikkai:
         specifier: ^2.2.8
-        version: 2.2.8(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
+        version: 2.2.9(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
@@ -2534,8 +2534,8 @@ packages:
   end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
 
-  ennikkai@2.2.8:
-    resolution: {integrity: sha512-VbynBDBQ5m2qJK87iUbUjJI7STKhQ5tZAuWLFBlJTX7tr7nKyW0tU/9dqO8vbDFUBoyM3s/SesadjDUdou/Lng==}
+  ennikkai@2.2.9:
+    resolution: {integrity: sha512-yI9tzqBtYOm4U+zDKFApY2Auzm8TQwDr/4J2s++/K1U0stUu6BIrmDy1VPRoO6EDXyw1jzB6Svkvfe/B2iF4Jw==}
     peerDependencies:
       '@constl/ipa': ^1.0.12
 
@@ -4593,6 +4593,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.6.1:
+    resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -6377,7 +6382,7 @@ snapshots:
       crypto-js: 4.2.0
       deep-equal: 2.2.3
       deepcopy: 2.1.0
-      ennikkai: 2.2.8(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
+      ennikkai: 2.2.9(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
       env-paths: 3.0.0
       events: 3.3.0
       genversion: 3.2.0
@@ -7639,7 +7644,7 @@ snapshots:
       hermes-profile-transformer: 0.0.6
       node-stream-zip: 1.15.0
       ora: 5.4.1
-      semver: 7.6.0
+      semver: 7.6.1
       strip-ansi: 5.2.0
       wcwidth: 1.0.1
       yaml: 2.4.2
@@ -7710,7 +7715,7 @@ snapshots:
       node-fetch: 2.7.0
       open: 6.4.0
       ora: 5.4.1
-      semver: 7.6.0
+      semver: 7.6.1
       shell-quote: 1.8.1
       sudo-prompt: 9.2.1
     transitivePeerDependencies:
@@ -7738,7 +7743,7 @@ snapshots:
       fs-extra: 8.1.0
       graceful-fs: 4.2.11
       prompts: 2.4.2
-      semver: 7.6.0
+      semver: 7.6.1
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -9024,7 +9029,7 @@ snapshots:
     dependencies:
       once: 1.4.0
 
-  ennikkai@2.2.8(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))):
+  ennikkai@2.2.9(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))):
     dependencies:
       '@constl/ipa': 1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))
       '@lassi-js/kili': 0.3.13(@constl/ipa@1.0.12(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
@@ -11565,6 +11570,8 @@ snapshots:
   semver@7.6.0:
     dependencies:
       lru-cache: 6.0.0
+
+  semver@7.6.1: {}
 
   send@0.18.0:
     dependencies:
