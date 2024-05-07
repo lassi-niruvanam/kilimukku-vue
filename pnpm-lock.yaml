@@ -10,7 +10,7 @@ dependencies:
     version: 2.0.9
   '@lassi-js/kili':
     specifier: ^0.3.10
-    version: 0.3.10(@constl/ipa@1.0.12)
+    version: 0.3.13(@constl/ipa@1.0.12)
   '@lassi-js/kilimukku':
     specifier: 1.1.6
     version: 1.1.6(react-native@0.74.1)
@@ -1485,7 +1485,7 @@ packages:
     resolution: {integrity: sha512-2NvlOY4Jfwn7U/sKF0kILl3+luHxq9hhEiBqZRqLTIV8LYmMQl9VpTMgMvRwKzgn/NDeZzsPb8olk2o00tkmZw==}
     engines: {npm: '>=8.7.0'}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/interface-internal': 1.0.10
       '@libp2p/peer-id': 4.0.8
@@ -1531,7 +1531,7 @@ packages:
     dependencies:
       '@chainsafe/as-chacha20poly1305': 0.1.0
       '@chainsafe/as-sha256': 0.4.1
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/peer-id': 4.0.8
       '@noble/ciphers': 0.4.1
@@ -1599,7 +1599,7 @@ packages:
       '@helia/block-brokers': 2.0.3
       '@helia/unixfs': 3.0.2
       '@ipld/dag-cbor': 9.2.0
-      '@lassi-js/kili': 0.3.11(@constl/ipa@1.0.12)
+      '@lassi-js/kili': 0.3.13(@constl/ipa@1.0.12)
       '@libp2p/autonat': 1.0.14
       '@libp2p/bootstrap': 10.0.17
       '@libp2p/circuit-relay-v2': 1.0.17
@@ -2215,26 +2215,14 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@lassi-js/kili@0.3.10(@constl/ipa@1.0.12):
-    resolution: {integrity: sha512-TC0dwRgPsK6AoVpTyTa7lgVZpkD5JH+W/Z/InoNc5pNSKHwfDONMc3+CphHvos5cB/KHV4cinCbuKrHOlkEthA==}
+  /@lassi-js/kili@0.3.13(@constl/ipa@1.0.12):
+    resolution: {integrity: sha512-L2k6onihv5S6/rtKfYyiax63tWVJ5sSvrhbFff75NVJvoicGrziw2jUr44qqD8P5W9IUqDhteZ+JuFaw7yasjg==}
     peerDependencies:
-      '@constl/ipa': ^1.0.5
+      '@constl/ipa': ^1.0.12
     dependencies:
       '@constl/ipa': 1.0.12(react-native@0.74.1)
       '@constl/utils-ipa': 1.0.0
-      '@orbitdb/core': 2.1.0
-      deepcopy: 2.1.0
-    transitivePeerDependencies:
-      - supports-color
-
-  /@lassi-js/kili@0.3.11(@constl/ipa@1.0.12):
-    resolution: {integrity: sha512-7ujEvbCg0kdp6U+zJmFAE+wOfNV6tHm8ssuoPYOUM7bJivFrQdLYv2D8MyPhsaWX6eQzVqBuDQqZqEyoQ9td/g==}
-    peerDependencies:
-      '@constl/ipa': ^1.0.5
-    dependencies:
-      '@constl/ipa': 1.0.12(react-native@0.74.1)
-      '@constl/utils-ipa': 1.0.0
-      '@orbitdb/core': 2.1.0
+      '@orbitdb/core': 2.2.0
       deepcopy: 2.1.0
     transitivePeerDependencies:
       - supports-color
@@ -2244,7 +2232,7 @@ packages:
     dependencies:
       '@constl/ipa': 1.0.12(react-native@0.74.1)
       '@constl/utils-ipa': 1.0.0
-      '@lassi-js/kili': 0.3.11(@constl/ipa@1.0.12)
+      '@lassi-js/kili': 0.3.13(@constl/ipa@1.0.12)
       uuid: 9.0.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
@@ -2324,7 +2312,7 @@ packages:
   /@libp2p/crypto@3.0.4:
     resolution: {integrity: sha512-FzSwBo+RJOUzdzEwug5ZL4dAGKwEBWTLzj+EmUTHHY6c87+oLh571DQk/w0oYObSD9hYbcKePgSBaZeBx0JaZg==}
     dependencies:
-      '@libp2p/interface': 1.1.5
+      '@libp2p/interface': 1.3.1
       '@noble/curves': 1.4.0
       '@noble/hashes': 1.4.0
       multiformats: 13.1.0
@@ -2337,6 +2325,18 @@ packages:
     resolution: {integrity: sha512-sJR/516/yJFwWJGme7sbQhe2DQYfoNTwGqKOmCz3M6fdeucfSCCLkaNjphijzvUoXROTsDs5Lv4xCTh0/KanMw==}
     dependencies:
       '@libp2p/interface': 1.1.5
+      '@noble/curves': 1.4.0
+      '@noble/hashes': 1.4.0
+      asn1js: 3.0.5
+      multiformats: 13.1.0
+      protons-runtime: 5.4.0
+      uint8arraylist: 2.4.8
+      uint8arrays: 5.0.3
+
+  /@libp2p/crypto@4.1.1:
+    resolution: {integrity: sha512-ju7P18Swd0CAa4ud31PBQdxPN++6dFl49RrH4F4yh5HYA3hXL18nbioH18iJ4WAahzjNQsdRMYzTQLWAUZPAkg==}
+    dependencies:
+      '@libp2p/interface': 1.3.1
       '@noble/curves': 1.4.0
       '@noble/hashes': 1.4.0
       asn1js: 3.0.5
@@ -2450,6 +2450,16 @@ packages:
       progress-events: 1.0.0
       uint8arraylist: 2.4.8
 
+  /@libp2p/interface@1.3.1:
+    resolution: {integrity: sha512-KJoYP6biAgIHUU3pxaixaaYCvIHZshzXetxfoNigadAZ3hCGuwpdFhk7IABEaI3RgadOOYUwW3MXPbL+cxnXVQ==}
+    dependencies:
+      '@multiformats/multiaddr': 12.2.1
+      it-pushable: 3.2.3
+      it-stream-types: 2.0.1
+      multiformats: 13.1.0
+      progress-events: 1.0.0
+      uint8arraylist: 2.4.8
+
   /@libp2p/interfaces@3.3.2:
     resolution: {integrity: sha512-p/M7plbrxLzuQchvNwww1Was7ZeGE2NaOFulMaZBYIihU8z3fhaV+a033OqnC/0NTX/yhfdNOG7znhYq3XoR/g==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
@@ -2457,7 +2467,7 @@ packages:
   /@libp2p/kad-dht@12.0.10:
     resolution: {integrity: sha512-GHeoyOFawAkUAr++9V/a7txUOjhQDKdXd8+Zx4dRPdFMlpHGAV6Tdjcewv49upf98ahWB7FHxwf2qs3kuF3jKg==}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/interface-internal': 1.0.10
       '@libp2p/peer-collections': 5.1.8
@@ -2494,7 +2504,7 @@ packages:
   /@libp2p/keychain@4.0.10:
     resolution: {integrity: sha512-yI7Z3H4hNky7uRyJUHE/4lcc42jboFlGnveW+nrUEm+3/IrCt7T+Ci74Ighhh41V90iKJyFAfQeR+HAnwpT9GA==}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/peer-id': 4.0.8
       interface-datastore: 8.2.11
@@ -2611,7 +2621,7 @@ packages:
   /@libp2p/peer-record@7.0.11:
     resolution: {integrity: sha512-jAi/TX1NSdNPsO0TmJd5fEKQfjdkxxBPmlwofBx2dPqtud/Aac4wa6dvIFQKqGkh8ZeC8FAQbv8jE/a8jgg3MQ==}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/peer-id': 4.0.8
       '@libp2p/utils': 5.2.7
@@ -2644,7 +2654,7 @@ packages:
   /@libp2p/ping@1.0.13:
     resolution: {integrity: sha512-x3q0IOYKmLzwKbsXKL5fH9EAf/M4/LoGctCbffpr+dxn3cYZOJIMO2ZgJkEBW7DslNTskufgeTsh+wgG0EsWrw==}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/interface-internal': 1.0.10
       '@multiformats/multiaddr': 12.2.1
@@ -2666,7 +2676,7 @@ packages:
   /@libp2p/pubsub@9.0.12:
     resolution: {integrity: sha512-PTrdRXoluKFhnhQVMwk5iDuwrEvOTqM/fjcOE5YZ5mJCCu5NuHGmFPy5hkVeu19IC8vM9LCTCdNLuA71/GUEZg==}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/interface-internal': 1.0.10
       '@libp2p/peer-collections': 5.1.8
@@ -2989,6 +2999,20 @@ packages:
       timeout-abort-controller: 3.0.0
       uint8arrays: 5.0.3
 
+  /@orbitdb/core@2.2.0:
+    resolution: {integrity: sha512-W1jScRjNVne7l0V9camdFQXrPPcWxSz7LwJzq6SryMe+xfVArrV4ADiElk7+dpQa6zwOOQpSUUfX2o46kY5dTw==}
+    engines: {node: '>=20.0.0'}
+    dependencies:
+      '@ipld/dag-cbor': 9.2.0
+      '@libp2p/crypto': 3.0.4
+      it-pipe: 3.0.1
+      level: 8.0.1
+      lru: 3.1.0
+      multiformats: 12.1.3
+      p-queue: 8.0.1
+      timeout-abort-controller: 3.0.0
+      uint8arrays: 5.0.3
+
   /@orbitdb/feed-db@1.0.0(react-native@0.74.1):
     resolution: {integrity: sha512-5wD8fNCwJcsQ+YSbG8J3b0WUSGU1oKkaI8r1nUwflXm9oHOtFoexY+Bq5DCgDvcbB7YBpvQpAX4KejlEu52ZwQ==}
     dependencies:
@@ -3014,7 +3038,7 @@ packages:
   /@orbitdb/quickstart@1.0.0(react-native@0.74.1):
     resolution: {integrity: sha512-o3qxh9I6OoYgGHmUXoebGz9vZL2ZYol9/hRY/A1gIKlgMFWmPUJarLoCtb7a4DTZ3XUBhvi35+nNeekAV6CwGQ==}
     dependencies:
-      '@orbitdb/core': 2.1.0
+      '@orbitdb/core': 2.2.0
       blockstore-level: 1.1.8
       helia: 3.0.1(react-native@0.74.1)
     transitivePeerDependencies:
@@ -4642,7 +4666,7 @@ packages:
       catering: 2.1.1
       module-error: 1.0.2
       napi-macros: 2.2.2
-      node-gyp-build: 4.8.0
+      node-gyp-build: 4.8.1
 
   /cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
@@ -5158,7 +5182,7 @@ packages:
       '@constl/ipa': ^1.0.0
     dependencies:
       '@constl/ipa': 1.0.12(react-native@0.74.1)
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.12)
+      '@lassi-js/kili': 0.3.13(@constl/ipa@1.0.12)
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
@@ -6217,7 +6241,7 @@ packages:
   /ipns@8.0.4:
     resolution: {integrity: sha512-iBrlCBm5fsMJW0BvVNwXLOadsyeTc9fz9PJAxJ3YggXgrx5T6lfRgVfTQsnYeByRADGfpWGOvW6zqnu8a3dcYw==}
     dependencies:
-      '@libp2p/crypto': 4.0.4
+      '@libp2p/crypto': 4.1.1
       '@libp2p/interface': 1.1.5
       '@libp2p/logger': 4.0.8
       '@libp2p/peer-id': 4.0.8
@@ -6569,6 +6593,11 @@ packages:
     dependencies:
       it-pushable: 3.2.3
 
+  /it-merge@3.0.5:
+    resolution: {integrity: sha512-2l7+mPf85pyRF5pqi0dKcA54E5Jm/2FyY5GsOaN51Ta0ipC7YZ3szuAsH8wOoB6eKY4XsU4k2X+mzPmFBMayEA==}
+    dependencies:
+      it-pushable: 3.2.3
+
   /it-ndjson@1.0.5:
     resolution: {integrity: sha512-2UEROCo458dDu9dABKb9fvD34p2YL6SqV5EOXN8SysX2Fpx0MSN69EiBmLLDDYSpQlrW0I5j3Tm8DtEIL5NsIw==}
 
@@ -6596,7 +6625,7 @@ packages:
     resolution: {integrity: sha512-sIoNrQl1qSRg2seYSBH/3QxWhJFn9PKYvOf/bHdtCBF0bnghey44VyASsWzn5dAx0DCDDABq1hZIuzKmtBZmKA==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
-      it-merge: 3.0.3
+      it-merge: 3.0.5
       it-pushable: 3.2.3
       it-stream-types: 2.0.1
 
@@ -7685,8 +7714,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /node-gyp-build@4.8.0:
-    resolution: {integrity: sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og==}
+  /node-gyp-build@4.8.1:
+    resolution: {integrity: sha512-OSs33Z9yWr148JZcbZd5WiAXhh/n9z8TxQcdMhIOlpN9AhWpLfvVFO73+m77bBABQMaY9XSvIa+qk0jlI7Gcaw==}
     hasBin: true
 
   /node-int64@0.4.0:
@@ -7787,7 +7816,7 @@ packages:
       '@constl/ipa': ^1.0.0
     dependencies:
       '@constl/ipa': 1.0.12(react-native@0.74.1)
-      '@lassi-js/kili': 0.3.10(@constl/ipa@1.0.12)
+      '@lassi-js/kili': 0.3.13(@constl/ipa@1.0.12)
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
@@ -9679,7 +9708,7 @@ packages:
   /wide-align@1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 4.2.3
+      string-width: 1.0.2
 
   /word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
