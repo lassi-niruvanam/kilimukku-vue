@@ -21,7 +21,6 @@
     "@lassi-js/kili": "^0.3.13",
     "@lassi-js/kilimukku": "1.1.6",
     "ennikkai": "^2.2.8",
-    "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "nuchabal": "^3.2.3",
     "uuid": "^9.0.1"
@@ -30,7 +29,6 @@
     "@constl/ipa": "^1.0.12",
     "@constl/utils-tests": "^1.2.5",
     "@eslint/js": "^9.2.0",
-    "@types/js-cookie": "^3.0.6",
     "@types/lodash": "^4.17.1",
     "@types/uuid": "^9.0.8",
     "@vitejs/plugin-vue": "^5.0.4",

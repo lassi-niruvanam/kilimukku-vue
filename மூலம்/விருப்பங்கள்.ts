@@ -1,5 +1,3 @@
-import Cookies from "js-cookie";
-
 import { App, Ref, inject, ref, watchEffect } from "vue";
 import { எண்ணுரு_நினைவி_பெயர், மொழி_நினைவி_பெயர் } from "./மாறிலிகள்.js";
 
@@ -18,18 +16,18 @@ export const விருப்பங்களை_பயன்படுத்த
   }>("விருப்பங்கள்")!;
 
   watchEffect(() => {
-    Cookies.set(
+    localStorage.set(
       நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்,
       JSON.stringify(தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value),
     );
   });
   watchEffect(() => {
     if (தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value)
-      Cookies.set(
+      localStorage.set(
         நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்,
         தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value,
       );
-    else Cookies.remove(நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்);
+    else localStorage.remove(நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்);
   });
 
   return {
@@ -52,7 +50,7 @@ export const விருப்பங்களை_உருவாக்கு = 
 }) => {
   return {
     install: (செயலி: App) => {
-      const மொழி_நினைவி = Cookies.get(நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்);
+      const மொழி_நினைவி = localStorage.get(நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்);
       let சேமிக்கப்பட்டவை: string[] | undefined = undefined;
       try {
         சேமிக்கப்பட்டவை = மொழி_நினைவி ? JSON.parse(மொழி_நினைவி) : undefined;
@@ -65,7 +63,7 @@ export const விருப்பங்களை_உருவாக்கு = 
           : [மொழி, ...மாற்றுமொழிகள்],
       );
 
-      const எண்ணுரு_நினைவி = Cookies.get(
+      const எண்ணுரு_நினைவி = localStorage.get(
         நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்,
       );
       const தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு = ref(எண்ணுரு_நினைவி || undefined);
