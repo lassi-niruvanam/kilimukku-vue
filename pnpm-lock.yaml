@@ -15,8 +15,8 @@ importers:
         specifier: ^0.3.13
         version: 0.3.13(@constl/ipa@1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
       '@lassi-js/kilimukku':
-        specifier: 1.1.6
-        version: 1.1.6(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))
+        specifier: 1.1.7
+        version: 1.1.7(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))
       ennikkai:
         specifier: ^2.2.8
         version: 2.2.9(@constl/ipa@1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
@@ -1164,8 +1164,13 @@ packages:
     peerDependencies:
       '@constl/ipa': ^1.0.12
 
-  '@lassi-js/kilimukku@1.1.6':
-    resolution: {integrity: sha512-rm9vznG0FEKJ6CcQvknVGUngH6LwNBAkEUZowGl4WjS7qj5o+B1oijyc/94XVFOZnV2RjaBQ8dSd9XY+WZ091Q==}
+  '@lassi-js/kili@0.3.14':
+    resolution: {integrity: sha512-ZMPRnQLdLVHOg342Qqfi8El72jeelUpUXLUEliN92I9zSEI6BsYN0RmZGEY1Dz9+sFOVQw+Vq2YJKuZlmMCghg==}
+    peerDependencies:
+      '@constl/ipa': ^1.0.14
+
+  '@lassi-js/kilimukku@1.1.7':
+    resolution: {integrity: sha512-ScgHnwz2CLayaSEak4Zc/5TkGJpyFmJaQXodDqRO5Rhe8+nHht/PVsJPn2Cwe/q2TrUegHlG7jgb+QzGL4ctew==}
 
   '@leichtgewicht/ip-codec@2.0.5':
     resolution: {integrity: sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==}
@@ -2846,6 +2851,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-prefix@3.0.0:
     resolution: {integrity: sha512-awConJSVCHVGND6x3tmMaKcQvwXLhjdkmomy2W+Goaui8YPgYgXJZewhg3fWC+DlfqqQuWg8AwqjGTD2nAPVWg==}
@@ -3010,6 +3016,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -4425,10 +4432,12 @@ packages:
 
   rimraf@2.6.3:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@5.0.7:
@@ -6745,11 +6754,20 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@lassi-js/kilimukku@1.1.6(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))':
+  '@lassi-js/kili@0.3.14(@constl/ipa@1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))':
     dependencies:
       '@constl/ipa': 1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))
       '@constl/utils-ipa': 1.0.0
-      '@lassi-js/kili': 0.3.13(@constl/ipa@1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
+      '@orbitdb/core': 2.2.0
+      deepcopy: 2.1.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@lassi-js/kilimukku@1.1.7(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))':
+    dependencies:
+      '@constl/ipa': 1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0))
+      '@constl/utils-ipa': 1.0.0
+      '@lassi-js/kili': 0.3.14(@constl/ipa@1.0.17(react-native@0.74.1(@babel/core@7.24.5)(@babel/preset-env@7.24.5(@babel/core@7.24.5))(react@18.2.0)))
       uuid: 9.0.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
