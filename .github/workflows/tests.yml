@@ -33,7 +33,6 @@ jobs:
   sodanaikal:
     name: கிளிமூக்கு-வூ சோதனைகள்
     runs-on: ubuntu-latest
-    needs: vadivuttam
     steps:
       - name: Préparation de Node.js
         uses: actions/setup-node@v4
