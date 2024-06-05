@@ -50,7 +50,9 @@ export const விருப்பங்களை_உருவாக்கு = 
 }) => {
   return {
     install: (செயலி: App) => {
-      const மொழி_நினைவி = localStorage.get(நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்);
+      const மொழி_நினைவி = localStorage.get(
+        நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்,
+      );
       let சேமிக்கப்பட்டவை: string[] | undefined = undefined;
       try {
         சேமிக்கப்பட்டவை = மொழி_நினைவி ? JSON.parse(மொழி_நினைவி) : undefined;

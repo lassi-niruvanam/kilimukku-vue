@@ -1,5 +1,5 @@
 <template>
-<p></p>
+  <p />
 </template>
 <script setup lang="ts">
 import { மொழிகளைப்_பயன்படுத்து } from "@/குறியீட்டு";
