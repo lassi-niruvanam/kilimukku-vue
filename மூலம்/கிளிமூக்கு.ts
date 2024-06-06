@@ -1,6 +1,7 @@
 import {
   computed,
   inject,
+  isRef,
   onMounted,
   onUnmounted,
   ref,
@@ -456,7 +457,7 @@ const மொழி_முன்னேற்றத்தை_பயன்படு
   onUnmounted(async () => {
     if (செ_மறந்துவிடு) await செ_மறந்துவிடு();
   });
-  if (typeof மொழி !== "string") {
+  if (isRef(மொழி)) {
     watchEffect(async () => {
       if (செ_மறந்துவிடு) await செ_மறந்துவிடு();
       if (மொழி.value) {

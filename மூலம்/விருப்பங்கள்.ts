@@ -16,18 +16,18 @@ export const விருப்பங்களை_பயன்படுத்த
   }>("விருப்பங்கள்")!;
 
   watchEffect(() => {
-    localStorage.set(
+    localStorage.setItem(
       நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்,
       JSON.stringify(தேர்ந்தெடுத்தப்பட்ட_மொழிகள்.value),
     );
   });
   watchEffect(() => {
     if (தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value)
-      localStorage.set(
+      localStorage.setItem(
         நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்,
         தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு.value,
       );
-    else localStorage.remove(நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்);
+    else localStorage.removeItem(நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்);
   });
 
   return {
@@ -50,7 +50,7 @@ export const விருப்பங்களை_உருவாக்கு = 
 }) => {
   return {
     install: (செயலி: App) => {
-      const மொழி_நினைவி = localStorage.get(
+      const மொழி_நினைவி = localStorage.getItem(
         நினைவிகள்?.மொழி || மொழி_நினைவி_பெயர்,
       );
       let சேமிக்கப்பட்டவை: string[] | undefined = undefined;
@@ -65,7 +65,7 @@ export const விருப்பங்களை_உருவாக்கு = 
           : [மொழி, ...மாற்றுமொழிகள்],
       );
 
-      const எண்ணுரு_நினைவி = localStorage.get(
+      const எண்ணுரு_நினைவி = localStorage.getItem(
         நினைவிகள்?.எண்ணுரு || எண்ணுரு_நினைவி_பெயர்,
       );
       const தேர்ந்தெடுத்தப்பட்ட_எண்ணுரு = ref(எண்ணுரு_நினைவி || undefined);
