@@ -9,7 +9,7 @@
     "தொகுப்பு": "pnpm புதுப்பிப்பு && pnpm தூயமைப்படுத்து && pnpm tspc -p tsconfig.build.json",
     "சோதனை": "vitest",
     "போர்வை": "vitest run --coverage",
-    "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint மூலம் சோதனை --fix",
+    "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint --fix",
     "வெளியிடு": "pnpm போர்வை && pnpm தொகுப்பு && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
     "புதுப்பிப்பு": "pnpm genversion  --es6 --semi மூலம்/பதிப்பு.ts"
   },
@@ -38,6 +38,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.26.0",
     "genversion": "^3.2.0",
+    "globals": "^15.3.0",
     "happy-dom": "14.12.0",
     "prettier": "^3.3.1",
     "rimraf": "^5.0.7",

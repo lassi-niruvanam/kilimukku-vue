@@ -1,13 +1,18 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginVue from "eslint-plugin-vue";
+import globals from "globals";
 
 export default [
+  {
+    ignores: ["**/coverage/**"],
+  },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs["flat/recommended"],
   {
     files: ["**/*.js", "**/*.ts", "**/*.vue"],
+
     languageOptions: {
       parserOptions: {
         ecmaVersion: 12,
@@ -29,4 +34,12 @@ export default [
       ],
     },
   },
+  {
+    files: ["vitest.config.js"],
+    languageOptions: {
+      globals: {
+        ...globals.node
+      }
+    }
+  }
 ];
