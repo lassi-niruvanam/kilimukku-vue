@@ -5,7 +5,7 @@ import globals from "globals";
 
 export default [
   {
-    ignores: ["**/coverage/**"],
+    ignores: ["**/coverage/**", "**/விநியோகம்/**"],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
