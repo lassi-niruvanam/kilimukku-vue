@@ -28,7 +28,7 @@ importers:
         version: 4.17.21
       nuchabal:
         specifier: ^3.2.5
-        version: 3.2.5(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
+        version: 3.2.7(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
       uuid:
         specifier: ^9.0.1
         version: 9.0.1
@@ -3997,8 +3997,8 @@ packages:
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
-  nuchabal@3.2.5:
-    resolution: {integrity: sha512-58UChUw9yRWI2sYB3V/52s4ryOZEq9WFMS7z0Uo2OJ5peIJ3aehGQGl+On7TkBY4lps62JIZdgS46kP/N8Q4SQ==}
+  nuchabal@3.2.7:
+    resolution: {integrity: sha512-1q3m0mYiLi6ueiNkJOiIly1alZqIz2Y7sdNgOov71H0BP62dBQr6vXVrpGzn4aPuotMQu5DICGXhkfEE0GUhGw==}
     peerDependencies:
       '@constl/ipa': ^1.0.12
 
@@ -10906,7 +10906,7 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuchabal@3.2.5(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0))):
+  nuchabal@3.2.7(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0))):
     dependencies:
       '@constl/ipa': 1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0))
       '@lassi-js/kili': 0.3.14(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
