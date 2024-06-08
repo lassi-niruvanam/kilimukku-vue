@@ -44,7 +44,7 @@ importers:
         version: 9.4.0
       '@types/lodash':
         specifier: ^4.17.4
-        version: 4.17.4
+        version: 4.17.5
       '@types/uuid':
         specifier: ^9.0.8
         version: 9.0.8
@@ -1668,8 +1668,8 @@ packages:
   '@types/lodash-es@4.17.12':
     resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
 
-  '@types/lodash@4.17.4':
-    resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
+  '@types/lodash@4.17.5':
+    resolution: {integrity: sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==}
 
   '@types/multicast-dns@7.2.4':
     resolution: {integrity: sha512-ib5K4cIDR4Ro5SR3Sx/LROkMDa0BHz0OPaCBL/OSPDsAXEGZ3/KQeS6poBKYVN7BfjXDL9lWNwzyHVgt/wkyCw==}
@@ -7995,9 +7995,9 @@ snapshots:
 
   '@types/lodash-es@4.17.12':
     dependencies:
-      '@types/lodash': 4.17.4
+      '@types/lodash': 4.17.5
 
-  '@types/lodash@4.17.4': {}
+  '@types/lodash@4.17.5': {}
 
   '@types/multicast-dns@7.2.4':
     dependencies:
