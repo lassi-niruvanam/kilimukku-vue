@@ -1,6 +1,6 @@
 {
   "name": "@lassi-js/kilimukku-vue",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "",
   "main": "விநியோகம்/குறியீட்டு.js",
   "type": "module",
@@ -8,7 +8,7 @@
     "தூயமைப்படுத்து": "rimraf விநியோகம்",
     "தொகுப்பு": "pnpm புதுப்பிப்பு && pnpm தூயமைப்படுத்து && pnpm tspc -p tsconfig.build.json",
     "சோதனை": "vitest",
-    "போர்வை": "vitest run --coverage",
+    "போர்வை": "vitest run",
     "வடிவூட்டம்": "pnpm prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\" && pnpm eslint --fix",
     "வெளியிடு": "pnpm போர்வை && pnpm தொகுப்பு && (git commit -a -m 'பதிப்பு' || true) && pnpm publish",
     "புதுப்பிப்பு": "pnpm genversion  --es6 --semi மூலம்/பதிப்பு.ts"
@@ -22,14 +22,14 @@
     "@lassi-js/kilimukku": "1.1.7",
     "ennikkai": "^2.3.0",
     "lodash": "^4.17.21",
-    "nuchabal": "^3.2.5",
-    "uuid": "^9.0.1"
+    "nuchabal": "^3.2.7",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@constl/ipa": "^1.0.21",
-    "@constl/utils-tests": "^1.2.6",
+    "@constl/utils-tests": "^1.2.7",
     "@eslint/js": "^9.4.0",
-    "@types/lodash": "^4.17.4",
+    "@types/lodash": "^4.17.5",
     "@types/uuid": "^9.0.8",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitest/coverage-istanbul": "^1.6.0",
@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-vue": "^9.26.0",
     "genversion": "^3.2.0",
-    "globals": "^15.3.0",
+    "globals": "^15.4.0",
     "happy-dom": "14.12.0",
     "prettier": "^3.3.1",
     "rimraf": "^5.0.7",
@@ -46,7 +46,7 @@
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.12.0",
     "typescript-transform-paths": "^3.4.7",
-    "vite": "^5.2.12",
+    "vite": "^5.2.13",
     "vitest": "^1.6.0",
     "vue": "^3.4.27"
   },
