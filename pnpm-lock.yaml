@@ -16,26 +16,26 @@ importers:
         version: 2.0.9
       '@lassi-js/kili':
         specifier: ^0.3.14
-        version: 0.3.14(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+        version: 0.3.14(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       '@lassi-js/kilimukku':
         specifier: 1.1.7
         version: 1.1.7(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
       ennikkai:
         specifier: ^2.3.0
-        version: 2.3.2(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+        version: 2.3.2(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
       nuchabal:
         specifier: ^3.2.7
-        version: 3.2.7(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+        version: 3.2.7(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
     devDependencies:
       '@constl/ipa':
         specifier: ^1.0.21
-        version: 1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
+        version: 1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
       '@constl/utils-tests':
         specifier: ^1.2.7
         version: 1.4.3(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
@@ -858,8 +858,8 @@ packages:
   '@constl/bohr-db@1.1.1':
     resolution: {integrity: sha512-dcdYBZAPnpXBUl5AZe+AV2/4fu94Vve63XPDkGiSDpQ3uQpO1wwMylmayosvyBDvvCnpdpm3gVJqhHMMVu+/Mg==}
 
-  '@constl/ipa@1.2.4':
-    resolution: {integrity: sha512-hKZHC93saPQU9Lo+8q/s58/RgTIsQq4coUEhVbIZK+aDzhTqiSLrb85BTpKrsXvdOkxdTMYM+usVRCs9svY9ow==}
+  '@constl/ipa@1.2.5':
+    resolution: {integrity: sha512-/FJWKsoojlAEwAHTYbaw/nF5vO2zBm2p7ARfLySY2YluhY/oe9T33g8mw+IBLseE67DV+RbTa1TcH75kPUuh6w==}
     engines: {node: '>=20'}
 
   '@constl/mandataire@3.0.2':
@@ -1664,9 +1664,6 @@ packages:
 
   '@types/node@18.19.55':
     resolution: {integrity: sha512-zzw5Vw52205Zr/nmErSEkN5FLqXPuKX/k5d1D7RKHATGqU7y6YfX9QxZraUzUrFGqH6XzOzG196BC35ltJC4Cw==}
-
-  '@types/node@22.7.4':
-    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
 
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
@@ -6407,7 +6404,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))':
+  '@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))':
     dependencies:
       '@chainsafe/libp2p-gossipsub': 13.2.0
       '@chainsafe/libp2p-noise': 15.1.2
@@ -6419,7 +6416,7 @@ snapshots:
       '@helia/block-brokers': 3.0.4
       '@helia/unixfs': 3.0.7
       '@ipld/dag-cbor': 9.2.1
-      '@lassi-js/kili': 0.3.16(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+      '@lassi-js/kili': 0.3.16(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       '@libp2p/autonat': 1.1.5
       '@libp2p/bootstrap': 10.1.5
       '@libp2p/circuit-relay-v2': 1.1.5
@@ -6448,7 +6445,7 @@ snapshots:
       crypto-js: 4.2.0
       deep-equal: 2.2.3
       deepcopy: 2.1.0
-      ennikkai: 2.3.2(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+      ennikkai: 2.3.2(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       env-paths: 3.0.0
       events: 3.3.0
       file-saver: 2.0.5
@@ -6673,7 +6670,7 @@ snapshots:
       it-map: 3.1.1
       it-pipe: 3.0.1
       it-take: 3.0.6
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       p-defer: 4.0.1
       progress-events: 1.0.1
       protons-runtime: 5.5.0
@@ -6694,7 +6691,7 @@ snapshots:
       '@multiformats/multiaddr-to-uri': 10.1.0
       interface-blockstore: 5.3.1
       interface-store: 5.1.8
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       progress-events: 1.0.1
 
   '@helia/delegated-routing-v1-http-api-client@3.0.2':
@@ -6721,7 +6718,7 @@ snapshots:
       interface-blockstore: 5.3.1
       interface-datastore: 8.3.1
       interface-store: 5.1.8
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       progress-events: 1.0.1
 
   '@helia/routers@1.1.1':
@@ -6784,7 +6781,7 @@ snapshots:
       it-foreach: 2.1.1
       it-merge: 3.0.5
       mortice: 3.0.4
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       murmurhash3js-revisited: 3.0.0
       p-defer: 4.0.1
       progress-events: 1.0.1
@@ -6812,7 +6809,7 @@ snapshots:
   '@ipld/dag-json@10.2.2':
     dependencies:
       cborg: 4.2.4
-      multiformats: 13.3.0
+      multiformats: 13.2.3
 
   '@ipld/dag-pb@4.1.2':
     dependencies:
@@ -6894,27 +6891,27 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lassi-js/kili@0.3.14(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))':
+  '@lassi-js/kili@0.3.14(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))':
     dependencies:
-      '@constl/ipa': 1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
+      '@constl/ipa': 1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
       '@constl/utils-ipa': 1.0.0
       '@orbitdb/core': 2.2.0
       deepcopy: 2.1.0
     transitivePeerDependencies:
       - supports-color
 
-  '@lassi-js/kili@0.3.16(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))':
+  '@lassi-js/kili@0.3.16(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))':
     dependencies:
-      '@constl/ipa': 1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
+      '@constl/ipa': 1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
       '@constl/utils-ipa': 1.0.3
       '@orbitdb/core': 2.2.0
       deepcopy: 2.1.0
 
   '@lassi-js/kilimukku@1.1.7(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))':
     dependencies:
-      '@constl/ipa': 1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
+      '@constl/ipa': 1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
       '@constl/utils-ipa': 1.0.0
-      '@lassi-js/kili': 0.3.14(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+      '@lassi-js/kili': 0.3.14(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       uuid: 9.0.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
@@ -6987,7 +6984,7 @@ snapshots:
       '@noble/curves': 1.6.0
       '@noble/hashes': 1.5.0
       asn1js: 3.0.5
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       protons-runtime: 5.5.0
       uint8arraylist: 2.4.8
       uint8arrays: 5.1.0
@@ -7068,7 +7065,7 @@ snapshots:
       '@multiformats/multiaddr': 12.3.1
       it-pushable: 3.2.3
       it-stream-types: 2.0.2
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       progress-events: 1.0.1
       uint8arraylist: 2.4.8
 
@@ -7142,7 +7139,7 @@ snapshots:
       '@libp2p/interface': 1.7.0
       '@multiformats/multiaddr': 12.3.1
       interface-datastore: 8.3.1
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       weald: 1.0.4
 
   '@libp2p/logger@5.1.0':
@@ -7205,7 +7202,7 @@ snapshots:
   '@libp2p/peer-id@4.2.4':
     dependencies:
       '@libp2p/interface': 1.7.0
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       uint8arrays: 5.1.0
 
   '@libp2p/peer-record@7.0.25':
@@ -7466,7 +7463,7 @@ snapshots:
     dependencies:
       '@chainsafe/is-ip': 2.0.2
       '@multiformats/multiaddr': 12.3.1
-      multiformats: 13.3.0
+      multiformats: 13.2.3
 
   '@multiformats/multiaddr-to-uri@10.1.0':
     dependencies:
@@ -7477,7 +7474,7 @@ snapshots:
       '@chainsafe/is-ip': 2.0.2
       '@chainsafe/netmask': 2.0.0
       '@multiformats/dns': 1.0.6
-      multiformats: 13.3.0
+      multiformats: 13.2.3
       uint8-varint: 2.0.4
       uint8arrays: 5.1.0
 
@@ -7970,7 +7967,7 @@ snapshots:
   '@types/multicast-dns@7.2.4':
     dependencies:
       '@types/dns-packet': 5.6.5
-      '@types/node': 22.7.4
+      '@types/node': 22.7.5
 
   '@types/murmurhash3js-revisited@3.0.3': {}
 
@@ -7981,10 +7978,6 @@ snapshots:
   '@types/node@18.19.55':
     dependencies:
       undici-types: 5.26.5
-
-  '@types/node@22.7.4':
-    dependencies:
-      undici-types: 6.19.8
 
   '@types/node@22.7.5':
     dependencies:
@@ -8004,7 +7997,7 @@ snapshots:
 
   '@types/ws@8.5.12':
     dependencies:
-      '@types/node': 22.7.4
+      '@types/node': 22.7.5
 
   '@types/yargs-parser@21.0.3': {}
 
@@ -9018,10 +9011,10 @@ snapshots:
     dependencies:
       once: 1.4.0
 
-  ennikkai@2.3.2(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))):
+  ennikkai@2.3.2(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))):
     dependencies:
-      '@constl/ipa': 1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
-      '@lassi-js/kili': 0.3.14(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+      '@constl/ipa': 1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
+      '@lassi-js/kili': 0.3.14(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
@@ -9683,7 +9676,7 @@ snapshots:
   interface-blockstore@5.3.1:
     dependencies:
       interface-store: 6.0.2
-      multiformats: 13.3.0
+      multiformats: 13.2.3
 
   interface-datastore@8.3.1:
     dependencies:
@@ -10836,10 +10829,10 @@ snapshots:
     dependencies:
       boolbase: 1.0.0
 
-  nuchabal@3.2.7(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))):
+  nuchabal@3.2.7(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))):
     dependencies:
-      '@constl/ipa': 1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
-      '@lassi-js/kili': 0.3.14(@constl/ipa@1.2.4(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
+      '@constl/ipa': 1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0))
+      '@lassi-js/kili': 0.3.14(@constl/ipa@1.2.5(react-native@0.74.1(@babel/core@7.25.7)(@babel/preset-env@7.24.5(@babel/core@7.25.7))(react@18.2.0)))
       deepmerge: 4.3.1
       events: 3.3.0
     transitivePeerDependencies:
