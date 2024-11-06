@@ -1,6 +1,6 @@
 {
   "name": "@lassi-js/kilimukku-vue",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "",
   "main": "விநியோகம்/குறியீட்டு.js",
   "type": "module",
@@ -20,8 +20,9 @@
     "@chriscdn/promise-semaphore": "^2.0.9",
     "@lassi-js/kili": "^0.3.14",
     "@lassi-js/kilimukku": "1.1.7",
+    "@types/lodash-es": "^4.17.12",
     "ennikkai": "^2.3.0",
-    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "nuchabal": "^3.2.7",
     "uuid": "^10.0.0"
   },
@@ -29,7 +30,6 @@
     "@constl/ipa": "^1.0.21",
     "@constl/utils-tests": "^1.2.7",
     "@eslint/js": "^9.4.0",
-    "@types/lodash": "^4.17.5",
     "@types/uuid": "^10.0.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitest/coverage-istanbul": "^2.0.0",

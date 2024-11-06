@@ -12,8 +12,7 @@ import { types } from "@constl/ipa";
 import { v4 as uuidv4 } from "uuid";
 
 import Semaphore from "@chriscdn/promise-semaphore";
-import pkg from "lodash";
-const { isEqual } = pkg;
+import { isEqual } from "lodash-es";
 
 import {
   கிளிமூக்கு,
