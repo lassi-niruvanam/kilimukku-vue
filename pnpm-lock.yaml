@@ -50,7 +50,7 @@ importers:
         version: 10.0.0
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.0.5(vite@5.2.13(@types/node@22.9.0)(terser@5.36.0))(vue@3.4.27(typescript@5.4.5))
+        version: 5.1.4(vite@5.2.13(@types/node@22.9.0)(terser@5.36.0))(vue@3.4.27(typescript@5.4.5))
       '@vitest/coverage-istanbul':
         specifier: ^2.0.0
         version: 2.1.4(vitest@2.1.4(@types/node@22.9.0)(happy-dom@15.7.4)(jsdom@24.1.0)(terser@5.36.0))
@@ -1850,8 +1850,8 @@ packages:
   '@vascosantos/moving-average@1.1.0':
     resolution: {integrity: sha512-MVEJ4vWAPNbrGLjz7ITnHYg+YXZ6ijAqtH5/cHwSoCpbvuJ98aLXwFfPKAUfZpJMQR5uXB58UJajbY130IRF/w==}
 
-  '@vitejs/plugin-vue@5.0.5':
-    resolution: {integrity: sha512-LOjm7XeIimLBZyzinBQ6OSm3UBCNVCpLkxGC0oWmm2YPzVZoxMsdvNVimLTBzpAnR9hl/yn1SHGuRfe6/Td9rQ==}
+  '@vitejs/plugin-vue@5.1.4':
+    resolution: {integrity: sha512-N2XSI2n3sQqp5w7Y/AN/L2XDjBIRGqXko+eDp42sydYSBeJuSm5a1sLf8zakmo8u7tA8NmBgoDLA1HeOESjp9A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
@@ -8485,7 +8485,7 @@ snapshots:
 
   '@vascosantos/moving-average@1.1.0': {}
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.2.13(@types/node@22.9.0)(terser@5.36.0))(vue@3.4.27(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.1.4(vite@5.2.13(@types/node@22.9.0)(terser@5.36.0))(vue@3.4.27(typescript@5.4.5))':
     dependencies:
       vite: 5.2.13(@types/node@22.9.0)(terser@5.36.0)
       vue: 3.4.27(typescript@5.4.5)
