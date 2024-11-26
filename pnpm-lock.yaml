@@ -34,7 +34,7 @@ importers:
         version: 3.2.7(@constl/ipa@1.4.4(react-native@0.74.1(@babel/core@7.26.0)(@babel/preset-env@7.24.5(@babel/core@7.26.0))(react@18.2.0)))
       uuid:
         specifier: ^11.0.0
-        version: 11.0.0
+        version: 11.0.3
     devDependencies:
       '@constl/ipa':
         specifier: ^1.0.21
@@ -5130,10 +5130,6 @@ packages:
   utils-merge@1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
-
-  uuid@11.0.0:
-    resolution: {integrity: sha512-iE8Fa5fgBY4rN5GvNUJ8TSwO1QG7TzdPfhrJczf6XJ6mZUxh/GX433N70fCiJL9h8EKP5ayEIo0Q6EBQGWHFqA==}
-    hasBin: true
 
   uuid@11.0.3:
     resolution: {integrity: sha512-d0z310fCWv5dJwnX1Y/MncBAqGMKEzlBb1AOf7z9K8ALnd0utBX/msg/fA0+sbyN1ihbMsLhrBlnl1ak7Wa0rg==}
@@ -12193,8 +12189,6 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   utils-merge@1.0.1: {}
-
-  uuid@11.0.0: {}
 
   uuid@11.0.3: {}
 
