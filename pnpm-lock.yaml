@@ -25,7 +25,7 @@ importers:
         version: 4.17.12
       ennikkai:
         specifier: ^2.3.0
-        version: 2.3.0(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
+        version: 2.3.2(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -2615,8 +2615,8 @@ packages:
   end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
 
-  ennikkai@2.3.0:
-    resolution: {integrity: sha512-elOBblEz2FUHLLvU0V9wvuQG1Ls//ktg2WXSFkGZH2sXwQVPsVFKyOqfq/jsE8LbPS30Cocz5fvXSXbvn6l57Q==}
+  ennikkai@2.3.2:
+    resolution: {integrity: sha512-IZlS2Mllo0pA22cmqSqxU7edCWEvcXRKnN6sB8F3hPsji4DfKcTFGsI9TfbOiErsfl+EcUcSuL/2kkGe5Dep/g==}
     peerDependencies:
       '@constl/ipa': ^1.0.12
 
@@ -6831,7 +6831,7 @@ snapshots:
       crypto-js: 4.2.0
       deep-equal: 2.2.3
       deepcopy: 2.1.0
-      ennikkai: 2.3.0(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
+      ennikkai: 2.3.2(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
       env-paths: 3.0.0
       events: 3.3.0
       genversion: 3.2.0
@@ -9406,7 +9406,7 @@ snapshots:
     dependencies:
       once: 1.4.0
 
-  ennikkai@2.3.0(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0))):
+  ennikkai@2.3.2(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0))):
     dependencies:
       '@constl/ipa': 1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0))
       '@lassi-js/kili': 0.3.14(@constl/ipa@1.0.21(react-native@0.74.1(@babel/core@7.24.7)(@babel/preset-env@7.24.5(@babel/core@7.24.7))(react@18.2.0)))
