@@ -39,7 +39,7 @@
     "eslint-plugin-vue": "^9.26.0",
     "genversion": "^3.2.0",
     "globals": "^15.4.0",
-    "happy-dom": "16.2.0",
+    "happy-dom": "16.2.6",
     "prettier": "^3.3.1",
     "rimraf": "^6.0.0",
     "ts-patch": "^3.2.0",
