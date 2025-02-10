@@ -50,7 +50,7 @@ importers:
         version: 5.2.1(vite@6.0.11(@types/node@22.13.0)(terser@5.37.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.7.3))
       '@vitest/coverage-istanbul':
         specifier: ^3.0.0
-        version: 3.0.5(vitest@3.0.5(@types/node@22.13.0)(happy-dom@16.8.1)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0))
+        version: 3.0.5(vitest@3.0.5(@types/node@22.13.0)(happy-dom@17.0.3)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0))
       '@vue/test-utils':
         specifier: ^2.4.6
         version: 2.4.6
@@ -70,8 +70,8 @@ importers:
         specifier: ^15.4.0
         version: 15.14.0
       happy-dom:
-        specifier: 16.8.1
-        version: 16.8.1
+        specifier: 17.0.3
+        version: 17.0.3
       prettier:
         specifier: ^3.3.1
         version: 3.4.2
@@ -95,7 +95,7 @@ importers:
         version: 6.0.11(@types/node@22.13.0)(terser@5.37.0)(yaml@2.7.0)
       vitest:
         specifier: ^3.0.0
-        version: 3.0.5(@types/node@22.13.0)(happy-dom@16.8.1)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0)
+        version: 3.0.5(@types/node@22.13.0)(happy-dom@17.0.3)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0)
       vue:
         specifier: ^3.4.27
         version: 3.5.13(typescript@5.7.3)
@@ -3060,8 +3060,8 @@ packages:
   hamt-sharding@3.0.6:
     resolution: {integrity: sha512-nZeamxfymIWLpVcAN0CRrb7uVq3hCOGj9IcL6NMA6VVCVWqj+h9Jo/SmaWuS92AEDf1thmHsM5D5c70hM3j2Tg==}
 
-  happy-dom@16.8.1:
-    resolution: {integrity: sha512-n0QrmT9lD81rbpKsyhnlz3DgnMZlaOkJPpgi746doA+HvaMC79bdWkwjrNnGJRvDrWTI8iOcJiVTJ5CdT/AZRw==}
+  happy-dom@17.0.3:
+    resolution: {integrity: sha512-1vWCwpeguN02wQF8kGeaj69FDX19bXKQXmyUKcE+O0WLY0uhS0RPTLCJR8Omy8hrjMHwV3dUJ24JUrK07aOA9Q==}
     engines: {node: '>=18.0.0'}
 
   has-bigints@1.1.0:
@@ -8560,7 +8560,7 @@ snapshots:
       vite: 6.0.11(@types/node@22.13.0)(terser@5.37.0)(yaml@2.7.0)
       vue: 3.5.13(typescript@5.7.3)
 
-  '@vitest/coverage-istanbul@3.0.5(vitest@3.0.5(@types/node@22.13.0)(happy-dom@16.8.1)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0))':
+  '@vitest/coverage-istanbul@3.0.5(vitest@3.0.5(@types/node@22.13.0)(happy-dom@17.0.3)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0))':
     dependencies:
       '@istanbuljs/schema': 0.1.3
       debug: 4.4.0
@@ -8572,7 +8572,7 @@ snapshots:
       magicast: 0.3.5
       test-exclude: 7.0.1
       tinyrainbow: 2.0.0
-      vitest: 3.0.5(@types/node@22.13.0)(happy-dom@16.8.1)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0)
+      vitest: 3.0.5(@types/node@22.13.0)(happy-dom@17.0.3)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -9983,7 +9983,7 @@ snapshots:
       sparse-array: 1.3.2
       uint8arrays: 5.1.0
 
-  happy-dom@16.8.1:
+  happy-dom@17.0.3:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -12615,7 +12615,7 @@ snapshots:
       terser: 5.37.0
       yaml: 2.7.0
 
-  vitest@3.0.5(@types/node@22.13.0)(happy-dom@16.8.1)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0):
+  vitest@3.0.5(@types/node@22.13.0)(happy-dom@17.0.3)(jsdom@24.1.0)(terser@5.37.0)(yaml@2.7.0):
     dependencies:
       '@vitest/expect': 3.0.5
       '@vitest/mocker': 3.0.5(vite@6.0.11(@types/node@22.13.0)(terser@5.37.0)(yaml@2.7.0))
@@ -12639,7 +12639,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.13.0
-      happy-dom: 16.8.1
+      happy-dom: 17.0.3
       jsdom: 24.1.0
     transitivePeerDependencies:
       - jiti
