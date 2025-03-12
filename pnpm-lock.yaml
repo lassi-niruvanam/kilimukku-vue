@@ -38,7 +38,7 @@ importers:
         version: 1.6.1(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))
       '@constl/utils-tests':
         specifier: ^1.6.14
-        version: 1.6.14(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))
+        version: 1.6.15(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))
       '@eslint/js':
         specifier: ^9.4.0
         version: 9.19.0
@@ -864,9 +864,6 @@ packages:
   '@chainsafe/as-sha256@1.0.0':
     resolution: {integrity: sha512-EYw5IZ99Mhn7K8d1eDDH66AFhPy9GcD7bfiqm9mwFjsg8MViEEicGl62b5YPzufBTFh7X7qWAe6yWpr/gbaVEw==}
 
-  '@chainsafe/is-ip@2.0.2':
-    resolution: {integrity: sha512-ndGqEMG1W5WkGagaqOZHpPU172AGdxr+LD15sv3WIUvT5oCFUrG1Y0CW/v2Egwj4JXEvSibaIIIqImsm98y1nA==}
-
   '@chainsafe/is-ip@2.1.0':
     resolution: {integrity: sha512-KIjt+6IfysQ4GCv66xihEitBjvhU/bixbbbFxdJ1sqCp4uJ0wuZiYBPhksZoy4lfaF0k9cwNzY5upEW/VWdw3w==}
 
@@ -911,8 +908,8 @@ packages:
     resolution: {integrity: sha512-br5uNxDQsFeVVe6WO2uE3cAF/WczOiJxXgE4yj7PlBEQ3NZp2qZqLyT3L3RofnSy4erm69GrUUjdOdUV1w4SUA==}
     engines: {node: '>=20'}
 
-  '@constl/utils-tests@1.6.14':
-    resolution: {integrity: sha512-IGbk9Y89dA/qbhvNQDvEFiN06Ms08XPYkbxfaJyIjTgvaDjFPhuJ8gYi2d9KRXvlbmyI4qcVzDI5LijNGn8PqQ==}
+  '@constl/utils-tests@1.6.15':
+    resolution: {integrity: sha512-M9e/VIzk7hMLD1aqPmHQ7ueLfSupvwZEUn+fOxIDrJ7JO/besPW5CDzub9RUJL+xKEbC26hJMwRYZYLltjc0tA==}
     engines: {node: '>=20'}
 
   '@csstools/color-helpers@5.0.2':
@@ -1310,9 +1307,6 @@ packages:
     resolution: {integrity: sha512-jXFQ3blhFMEyQbFw/U8Glo3F/fUO5LEaX5HIdeqNpCliK+XnwTfpkcaG+WsJrcApWK4FFyUHc+GGqiWR0hAFFg==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
 
-  '@libp2p/interface@2.4.0':
-    resolution: {integrity: sha512-PfzxOaz7dU4sdnUNByGLoEk9iqhD0IS+LQMQB12CXh6VyYLA7J8oaoHk3yRBZze3Y4FPa5DHMm5Oi9O/IhreaQ==}
-
   '@libp2p/interface@2.7.0':
     resolution: {integrity: sha512-lWmfIGzbSaw//yoEWWJh8dXNDGSCwUyXwC7P1Q6jCFWNoEtCaB1pvwOGBtri7Db/aNFZryMzN5covoq5ulldnA==}
 
@@ -1398,9 +1392,6 @@ packages:
 
   '@multiformats/multiaddr-to-uri@11.0.0':
     resolution: {integrity: sha512-9RNmlIGwZbBLsHekT50dbt4o4u8Iciw9kGjv+WHiGxQdsJ6xKKjU1+C0Vbas6RilMbaVOAOnEyfNcXbUmTkLxQ==}
-
-  '@multiformats/multiaddr@12.3.4':
-    resolution: {integrity: sha512-R4pEEUyWGrRo16TSflz80Yr6XNbPirix1pfPqDLXsDZ4aaIrhZ7cez9jnyRQgci6DuuqSyZAdJKV6SdxpZ7Oiw==}
 
   '@multiformats/multiaddr@12.4.0':
     resolution: {integrity: sha512-FL7yBTLijJ5JkO044BGb2msf+uJLrwpD6jD6TkXlbjA9N12+18HT40jvd4o5vL4LOJMc86dPX6tGtk/uI9kYKg==}
@@ -1771,9 +1762,6 @@ packages:
 
   '@types/node@18.19.80':
     resolution: {integrity: sha512-kEWeMwMeIvxYkeg1gTc01awpwLbfMRZXdIhwRcakd/KlK53jmRC26LqcbIt7fnAQTu5GzlnWmzA3H6+l1u6xxQ==}
-
-  '@types/node@22.10.6':
-    resolution: {integrity: sha512-qNiuwC4ZDAUNcY47xgaSuS92cjf8JbSUoaKS77bmLG1rU7MlATVSiw/IlrjtIyyskXBZ8KkNfjK/P5na7rgXbQ==}
 
   '@types/node@22.13.10':
     resolution: {integrity: sha512-I6LPUvlRH+O6VRUqYOcMudhaIdUVWfsjnZavnsraHvpBwaEyMN29ry+0UVJhImYL16xsscu0aske3yA+uPOWfw==}
@@ -6691,8 +6679,6 @@ snapshots:
 
   '@chainsafe/as-sha256@1.0.0': {}
 
-  '@chainsafe/is-ip@2.0.2': {}
-
   '@chainsafe/is-ip@2.1.0': {}
 
   '@chainsafe/libp2p-gossipsub@14.1.0':
@@ -6744,7 +6730,7 @@ snapshots:
 
   '@chainsafe/netmask@2.0.0':
     dependencies:
-      '@chainsafe/is-ip': 2.0.2
+      '@chainsafe/is-ip': 2.1.0
 
   '@chriscdn/promise-semaphore@2.0.10': {}
 
@@ -6902,7 +6888,7 @@ snapshots:
       uint8arrays: 5.1.0
       wherearewe: 2.0.1
 
-  '@constl/utils-tests@1.6.14(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))':
+  '@constl/utils-tests@1.6.15(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))':
     dependencies:
       '@chainsafe/libp2p-gossipsub': 14.1.0
       '@helia/block-brokers': 4.0.4
@@ -7346,7 +7332,7 @@ snapshots:
     dependencies:
       '@constl/ipa': 1.6.1(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))
       '@constl/utils-ipa': 1.0.4
-      '@orbitdb/core': 2.4.3
+      '@orbitdb/core': 2.5.0
       deepcopy: 2.1.0
 
   '@lassi-js/kili@0.4.1':
@@ -7436,11 +7422,11 @@ snapshots:
 
   '@libp2p/crypto@5.0.9':
     dependencies:
-      '@libp2p/interface': 2.4.0
+      '@libp2p/interface': 2.7.0
       '@noble/curves': 1.8.0
       '@noble/hashes': 1.7.0
       asn1js: 3.0.5
-      multiformats: 13.3.1
+      multiformats: 13.3.2
       protons-runtime: 5.5.0
       uint8arraylist: 2.4.8
       uint8arrays: 5.1.0
@@ -7529,15 +7515,6 @@ snapshots:
       it-stream-types: 2.0.2
     transitivePeerDependencies:
       - supports-color
-
-  '@libp2p/interface@2.4.0':
-    dependencies:
-      '@multiformats/multiaddr': 12.3.4
-      it-pushable: 3.2.3
-      it-stream-types: 2.0.2
-      multiformats: 13.3.1
-      progress-events: 1.0.1
-      uint8arraylist: 2.4.8
 
   '@libp2p/interface@2.7.0':
     dependencies:
@@ -7871,7 +7848,7 @@ snapshots:
       buffer: 6.0.3
       dns-packet: 5.6.1
       hashlru: 2.3.0
-      p-queue: 8.0.1
+      p-queue: 8.1.0
       progress-events: 1.0.1
       uint8arrays: 5.1.0
 
@@ -7888,15 +7865,6 @@ snapshots:
   '@multiformats/multiaddr-to-uri@11.0.0':
     dependencies:
       '@multiformats/multiaddr': 12.4.0
-
-  '@multiformats/multiaddr@12.3.4':
-    dependencies:
-      '@chainsafe/is-ip': 2.0.2
-      '@chainsafe/netmask': 2.0.0
-      '@multiformats/dns': 1.0.6
-      multiformats: 13.3.1
-      uint8-varint: 2.0.4
-      uint8arrays: 5.1.0
 
   '@multiformats/multiaddr@12.4.0':
     dependencies:
@@ -8486,7 +8454,7 @@ snapshots:
 
   '@types/dns-packet@5.6.5':
     dependencies:
-      '@types/node': 22.10.6
+      '@types/node': 22.13.10
 
   '@types/estree@1.0.6': {}
 
@@ -8520,10 +8488,6 @@ snapshots:
   '@types/node@18.19.80':
     dependencies:
       undici-types: 5.26.5
-
-  '@types/node@22.10.6':
-    dependencies:
-      undici-types: 6.20.0
 
   '@types/node@22.13.10':
     dependencies:
@@ -8612,7 +8576,7 @@ snapshots:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.7.0
+      semver: 7.7.1
       ts-api-utils: 2.0.0(typescript@5.7.3)
       typescript: 5.7.3
     transitivePeerDependencies:
@@ -12570,7 +12534,7 @@ snapshots:
 
   uint8arrays@5.1.0:
     dependencies:
-      multiformats: 13.3.1
+      multiformats: 13.3.2
 
   undici-types@5.26.5: {}
 
