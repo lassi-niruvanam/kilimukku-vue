@@ -1,4 +1,4 @@
-import { type Ref, unref, MaybeRef, ComputedRef } from "vue";
+import { unref, MaybeRef, ComputedRef } from "vue";
 
 export const குறிப்பின்_மதிப்பை_பெறு = <வ>(இ: MaybeRef<வ> | ComputedRef<வ>): வ => {
   return unref(இ);
