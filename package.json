@@ -18,8 +18,8 @@
   "license": "AGPL-3.0-or-later",
   "dependencies": {
     "@chriscdn/promise-semaphore": "^2.0.9",
-    "@lassi-js/kili": "^0.4.0",
-    "@lassi-js/kilimukku": "1.1.7",
+    "@lassi-js/kili": "^0.4.2",
+    "@lassi-js/kilimukku": "1.1.9",
     "@types/lodash-es": "^4.17.12",
     "ennikkai": "^2.3.0",
     "lodash-es": "^4.17.21",
@@ -27,7 +27,7 @@
     "uuid": "^11.0.0"
   },
   "devDependencies": {
-    "@constl/ipa": "^1.6.1",
+    "@constl/ipa": "^1.6.2",
     "@constl/utils-tests": "^1.6.14",
     "@eslint/js": "^9.4.0",
     "@types/uuid": "^10.0.0",
