@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@chriscdn/promise-semaphore':
         specifier: ^2.0.9
-        version: 2.0.9
+        version: 2.0.10
       '@lassi-js/kili':
         specifier: ^0.4.2
         version: 0.4.2
@@ -875,9 +875,6 @@ packages:
 
   '@chriscdn/promise-semaphore@2.0.10':
     resolution: {integrity: sha512-NagoHAZEYISDYYprsHe+x2BEcD6GKhTpEreI8BM1qgtHOtCS3lbwRvvTQxzAxU8JVSmw7ep/ROLv3Ng/MPcMHg==}
-
-  '@chriscdn/promise-semaphore@2.0.9':
-    resolution: {integrity: sha512-kKXJcm5gM8FN8O8U20H19/85b8R33K0Q2u5cnm9mfblK/7QcNChlOhCTWgnrr8wYiuF1ZbYIZcioxW79QfjnmQ==}
 
   '@constl/bohr-db@1.2.3':
     resolution: {integrity: sha512-IJXOqeMnJEOqD7DRNMowwPOY7bVKlTdQNu3DNn9zoSKj+fBzTXLzkxl4uRbKLu9vwWzjoXyxgvp2iw7vkt/amQ==}
@@ -6715,8 +6712,6 @@ snapshots:
 
   '@chriscdn/promise-semaphore@2.0.10': {}
 
-  '@chriscdn/promise-semaphore@2.0.9': {}
-
   '@constl/bohr-db@1.2.3(react-native@0.74.1(@babel/core@7.26.7)(@babel/preset-env@7.24.5(@babel/core@7.26.7))(react@18.2.0))':
     dependencies:
       '@orbitdb/core': 2.5.0
@@ -6828,7 +6823,7 @@ snapshots:
 
   '@constl/utils-ipa@1.0.4':
     dependencies:
-      '@chriscdn/promise-semaphore': 2.0.9
+      '@chriscdn/promise-semaphore': 2.0.10
       browser-fs-access: 0.35.0
       deep-equal: 2.2.3
       events: 3.3.0
@@ -6842,7 +6837,7 @@ snapshots:
 
   '@constl/utils-ipa@1.0.5':
     dependencies:
-      '@chriscdn/promise-semaphore': 2.0.9
+      '@chriscdn/promise-semaphore': 2.0.10
       browser-fs-access: 0.35.0
       deep-equal: 2.2.3
       events: 3.3.0
