@@ -13,7 +13,7 @@ importers:
         version: 2.0.10
       '@lassi-js/kili':
         specifier: ^0.4.2
-        version: 0.4.3
+        version: 0.4.4
       '@lassi-js/kilimukku':
         specifier: 1.1.9
         version: 1.1.9(react-native@0.74.1(@babel/core@7.26.10)(@babel/preset-env@7.24.5(@babel/core@7.26.10))(react@18.2.0))
@@ -857,8 +857,8 @@ packages:
     resolution: {integrity: sha512-br5uNxDQsFeVVe6WO2uE3cAF/WczOiJxXgE4yj7PlBEQ3NZp2qZqLyT3L3RofnSy4erm69GrUUjdOdUV1w4SUA==}
     engines: {node: '>=20'}
 
-  '@constl/utils-ipa@2.0.1':
-    resolution: {integrity: sha512-KFIw7bZ8Bxs/vkmLa64u7MZIJFPVk1iNJ/WdwvbvvFrWcAggfuajeZrJrdVGmAPJipdbJ1CKl7AuKd3tXD1wsg==}
+  '@constl/utils-ipa@2.0.2':
+    resolution: {integrity: sha512-HQoja5GWUIrpXgUfHSTzu6lDNmYHd/rZvjpT05M0YBn/2Qe2n9+yUkgDmVbpi6zmZM/EQyvYYR3k1+scRYbewg==}
     engines: {node: '>=20'}
 
   '@constl/utils-tests@1.6.15':
@@ -1219,8 +1219,8 @@ packages:
     peerDependencies:
       '@constl/ipa': ^1.0.14
 
-  '@lassi-js/kili@0.4.3':
-    resolution: {integrity: sha512-ijHY8myQZGTAqQrjk+TVJH/dH4npErDIsuylf28prYQYJq1pYnF9FZYDIrs+Hy++hlw4hRLTRer8yX+9bQeQ0g==}
+  '@lassi-js/kili@0.4.4':
+    resolution: {integrity: sha512-8AF5rHXjSJ3tVhTH9mxAqBBMeV8UW+C4Jq0d61VjVA8LOxroj+Dwd0wztfxnjRqa9e72SYr9hik4YHL2NLaTxw==}
 
   '@lassi-js/kilimukku@1.1.9':
     resolution: {integrity: sha512-droNCf3M0uGDdzPQvCwy+9HxD1b/S1a6c1xOh9vOWaAKA6DGfIRe0e5iAdHsc9SO2VJ+DQauZZaQn/ycMfHzEw==}
@@ -2918,8 +2918,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.267.0:
-    resolution: {integrity: sha512-eBgyFHiT/CHevT225CVQbwnAwRKLjqgtkkpDBMvNGV2C/Tz8x4Zr9FZeWed/cSWhRTiUhH7MXpIWSHkrzvaqdA==}
+  flow-parser@0.268.0:
+    resolution: {integrity: sha512-URZmPy/jKDDIJUHUfC+5KNwaPcfONTL3R8xltQWVEoCKLWowVebEBg89nbAnYHNo6ev8KzKWFpOROfHZdaCoxA==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.9:
@@ -6554,7 +6554,7 @@ snapshots:
       '@helia/block-brokers': 4.0.4
       '@helia/unixfs': 4.0.2
       '@ipld/dag-cbor': 9.2.2
-      '@lassi-js/kili': 0.4.3
+      '@lassi-js/kili': 0.4.4
       '@libp2p/autonat': 2.0.27
       '@libp2p/bootstrap': 11.0.31
       '@libp2p/circuit-relay-v2': 3.2.7
@@ -6648,9 +6648,8 @@ snapshots:
       uint8arrays: 5.1.0
       wherearewe: 2.0.1
 
-  '@constl/utils-ipa@2.0.1':
+  '@constl/utils-ipa@2.0.2':
     dependencies:
-      '@chriscdn/promise-semaphore': 2.0.10
       browser-fs-access: 0.35.0
       deep-equal: 2.2.3
       events: 3.3.0
@@ -6658,7 +6657,9 @@ snapshots:
       geojson-validation: 1.0.2
       jszip: 3.10.1
       multiformats: 13.3.2
+      p-queue: 8.1.0
       rimraf: 6.0.1
+      tiny-typed-emitter: 2.1.0
       uint8arrays: 5.1.0
       wherearewe: 2.0.1
 
@@ -7120,9 +7121,9 @@ snapshots:
       '@orbitdb/core': 2.5.0
       deepcopy: 2.1.0
 
-  '@lassi-js/kili@0.4.3':
+  '@lassi-js/kili@0.4.4':
     dependencies:
-      '@constl/utils-ipa': 2.0.1
+      '@constl/utils-ipa': 2.0.2
       '@orbitdb/core': 2.5.0
       deepcopy: 2.1.0
 
@@ -7130,7 +7131,7 @@ snapshots:
     dependencies:
       '@constl/ipa': 1.6.2(react-native@0.74.1(@babel/core@7.26.10)(@babel/preset-env@7.24.5(@babel/core@7.26.10))(react@18.2.0))
       '@constl/utils-ipa': 1.0.5
-      '@lassi-js/kili': 0.4.3
+      '@lassi-js/kili': 0.4.4
       uuid: 11.1.0
       wherearewe: 2.0.1
     transitivePeerDependencies:
@@ -9612,7 +9613,7 @@ snapshots:
 
   ennikkai@2.3.4:
     dependencies:
-      '@lassi-js/kili': 0.4.3
+      '@lassi-js/kili': 0.4.4
       deepmerge: 4.3.1
       events: 3.3.0
 
@@ -9939,7 +9940,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.267.0: {}
+  flow-parser@0.268.0: {}
 
   follow-redirects@1.15.9(debug@4.4.0):
     optionalDependencies:
@@ -10799,7 +10800,7 @@ snapshots:
       '@babel/register': 7.25.9(@babel/core@7.26.10)
       babel-core: 7.0.0-bridge.0(@babel/core@7.26.10)
       chalk: 4.1.2
-      flow-parser: 0.267.0
+      flow-parser: 0.268.0
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
