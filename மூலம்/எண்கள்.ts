@@ -71,9 +71,9 @@ export const எண்களைப்_பயன்படுத்து = () => 
   });
 
   const எண்ணை_வடிவூட்டு = (
-    எண்: குறிப்பு_அல்லது_மதிப்பு<number|undefined>,
+    எண்: குறிப்பு_அல்லது_மதிப்பு<number | undefined>,
     முறைமை?: குறிப்பு_அல்லது_மதிப்பு<string>,
-  ): ComputedRef<string|undefined> => {
+  ): ComputedRef<string | undefined> => {
     const வடிவூட்டப்பட்ட_எண் = computed(() => {
       const எண்_மதிப்பு = குறிப்பின்_மதிப்பை_பெறு(எண்);
       if (எண்_மதிப்பு === undefined) return undefined;

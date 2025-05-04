@@ -38,8 +38,8 @@ export default [
     files: ["vitest.config.js"],
     languageOptions: {
       globals: {
-        ...globals.node
-      }
-    }
-  }
+        ...globals.node,
+      },
+    },
+  },
 ];
