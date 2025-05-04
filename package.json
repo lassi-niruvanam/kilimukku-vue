@@ -17,7 +17,7 @@
   "author": "Julien Jean Malard-Adam",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@chriscdn/promise-semaphore": "^2.0.9",
+    "@chriscdn/promise-semaphore": "^3.0.0",
     "@lassi-js/kili": "^0.4.2",
     "@lassi-js/kilimukku": "1.1.9",
     "@types/lodash-es": "^4.17.12",
