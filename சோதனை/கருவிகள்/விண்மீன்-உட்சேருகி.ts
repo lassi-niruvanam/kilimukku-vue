@@ -1,8 +1,8 @@
 import type { App } from "vue";
 
-import { ClientConstellation, créerConstellation } from "@constl/ipa";
+import { type Constellation, créerConstellation } from "@constl/ipa";
 
-export default ({ விண்மீன் }: { விண்மீன்?: ClientConstellation }) => {
+export default ({ விண்மீன் }: { விண்மீன்?: Constellation }) => {
   return {
     install: (செயலி: App) => {
       const வாடிக்கையாளர் = விண்மீன் || créerConstellation();
