@@ -5,6 +5,7 @@ import {
   onMounted,
   onUnmounted,
   ref,
+  toRef,
   unref,
   watchEffect,
 } from "vue";
@@ -12,7 +13,7 @@ import type { Ref, App, ComputedRef, MaybeRef } from "vue";
 import { types } from "@constl/ipa";
 import { v4 as uuidv4 } from "uuid";
 
-import Semaphore from "@chriscdn/promise-semaphore";
+import { Semaphore } from "@chriscdn/promise-semaphore";
 import { isEqual } from "lodash-es";
 
 import {
@@ -233,9 +234,11 @@ export const மொழியாக்கத்தைப்_பயன்படு
 
   const மொ = (
     சாபி: string,
-    இடைச்செருகல்?: { [சாபி: string]: unknown } | number | unknown[],
-    இ?: number,
+    இடைச்செருகல்?: { [சாபி: string]: unknown } | MaybeRef<number|undefined> | unknown[],
+    இ?: MaybeRef<number>,
   ): ComputedRef<string> => {
+    const இ_மேற்கோள் = toRef(இ);
+    const இடைச்செருகல்_மேற்கோள் = toRef(இடைச்செருகல்);
     return computed(() => {
       const செய்தி_அகராதி = மரத்திலிருந்து_மொழிபெயர்ப்பு_அகராதி(
         செய்திகள்.value || {},
@@ -308,21 +311,21 @@ export const மொழியாக்கத்தைப்_பயன்படு
       if (பன்மை_சார்ந்த_செய்திகள்.length < 2) {
         return செய்தியை_வடிவூட்டு(
           பன்மை_சார்ந்த_செய்திகள்[0],
-          typeof இடைச்செருகல் !== "number" ? இடைச்செருகல் : undefined,
+          typeof இடைச்செருகல்_மேற்கோள்.value !== "number" ? இடைச்செருகல்_மேற்கோள்.value : undefined,
         );
       } else {
         const பன்தன்மையின்_எண் =
-          typeof இ === "number"
-            ? இ
-            : typeof இடைச்செருகல் === "number"
-              ? இடைச்செருகல்
+          typeof இ_மேற்கோள்.value === "number"
+            ? இ_மேற்கோள்.value
+            : typeof இடைச்செருகல்_மேற்கோள்.value === "number"
+              ? இடைச்செருகல்_மேற்கோள்.value
               : 0;
         return செய்தியை_வடிவூட்டு(
           பன்மை_சார்ந்த_செய்திகள்[பன்தன்மையின்_எண்] ||
             பன்மை_சார்ந்த_செய்திகள்[பன்மை_சார்ந்த_செய்திகள்.length - 1],
-          typeof இடைச்செருகல் === "number"
-            ? { இ: இடைச்செருகல், n: இடைச்செருகல் }
-            : இடைச்செருகல், // இதுடன் இணக்கமானது: https://kazupon.github.io/vue-i18n/guide/pluralization.html#accessing-the-number-via-the-pre-defined-argument
+          typeof இடைச்செருகல்_மேற்கோள்.value === "number"
+            ? { இ: இடைச்செருகல்_மேற்கோள்.value, n: இடைச்செருகல்_மேற்கோள்.value }
+            : இடைச்செருகல்_மேற்கோள்.value, // இதுடன் இணக்கமானது: https://kazupon.github.io/vue-i18n/guide/pluralization.html#accessing-the-number-via-the-pre-defined-argument
         );
       }
     });
