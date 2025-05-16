@@ -1,14 +1,44 @@
-import { VueWrapper, mount } from "@vue/test-utils";
+import { mount } from "@vue/test-utils";
 import { beforeAll, describe, test } from "vitest";
 
-import { மொழிகளை_உருவாக்கு } from "../மூலம்/குறியீட்டு";
+import { மொழிகளை_உருவாக்கு, மொழிகளைப்_பயன்படுத்து } from "../மூலம்/குறியீட்டு";
 
-import சோதனை_கூறு from "./கூறுகள்/மொழிகள்.vue";
+import { defineComponent, inject, ref } from "vue";
+
+const சோதனை_கூற்றை_பெறு = () => {
+  window.localStorage.clear();
+  return defineComponent({
+    setup() {
+
+      const nuchabäl = inject("nuch'ab'äl");
+      
+      const மொழி_மாறிகள் = மொழிகளைப்_பயன்படுத்து();
+      
+      const மொழி_திசை = மொழி_மாறிகள்.வலதிலிருந்து_இடது_மொழி()
+      const பார்சிகம்_திசை = மொழி_மாறிகள்.வலதிலிருந்து_இடது_மொழி("فا")
+
+      const அகராதி = ref({fr: "kilimukku", த: "கிளிமூக்கு"})
+      const பெயர் = மொழி_மாறிகள்.அகராதியிலிருந்து_மொழிபெயர்ப்பு(அகராதி);
+
+      return {
+        nuchabäl,
+        ...மொழி_மாறிகள்,
+        மொழி_திசை,
+        பார்சிகம்_திசை,
+        அகராதி,
+        பெயர்,
+      }
+    },
+    render() {
+      return "";
+    },
+  });
+}
 
 describe("மொழிகள்", function () {
-  let உறை: VueWrapper<any, any>;
+  let உறை: ReturnType<typeof mount<ReturnType<typeof சோதனை_கூற்றை_பெறு>>>;
   beforeAll(() => {
-    உறை = mount(சோதனை_கூறு, {
+    உறை = mount(சோதனை_கூற்றை_பெறு(), {
       global: {
         plugins: [
           மொழிகளை_உருவாக்கு({
