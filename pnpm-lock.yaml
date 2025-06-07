@@ -62,7 +62,7 @@ importers:
         version: 10.1.5(eslint@9.28.0)
       eslint-plugin-vue:
         specifier: ^10.1.0
-        version: 10.1.0(eslint@9.28.0)(vue-eslint-parser@9.4.3(eslint@9.28.0))
+        version: 10.2.0(eslint@9.28.0)(vue-eslint-parser@9.4.3(eslint@9.28.0))
       genversion:
         specifier: ^3.2.0
         version: 3.2.0
@@ -2735,8 +2735,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-vue@10.1.0:
-    resolution: {integrity: sha512-/VTiJ1eSfNLw6lvG9ENySbGmcVvz6wZ9nA7ZqXlLBY2RkaF15iViYKxglWiIch12KiLAj0j1iXPYU6W4wTROFA==}
+  eslint-plugin-vue@10.2.0:
+    resolution: {integrity: sha512-tl9s+KN3z0hN2b8fV2xSs5ytGl7Esk1oSCxULLwFcdaElhZ8btYYZFrWxvh4En+czrSDtuLCeCOGa8HhEZuBdQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -2936,8 +2936,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.272.2:
-    resolution: {integrity: sha512-AMMHyzXP4T6ran6yIqaPniH8BDSdJf3T8PJVfnTnPAdILA1tt8nCSxiJAWRk2ZKiuos3OsrO2NWe8XNIcPw+Qw==}
+  flow-parser@0.273.0:
+    resolution: {integrity: sha512-KHe9AJfT0Zn0TpQ2daDFBpwaE0zqjWWiWLOANxzo/U6Xar5fRpU3Lucnk8iMVNitxo9inz2OmSnger70qHmsLw==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.9:
@@ -9784,7 +9784,7 @@ snapshots:
     dependencies:
       eslint: 9.28.0
 
-  eslint-plugin-vue@10.1.0(eslint@9.28.0)(vue-eslint-parser@9.4.3(eslint@9.28.0)):
+  eslint-plugin-vue@10.2.0(eslint@9.28.0)(vue-eslint-parser@9.4.3(eslint@9.28.0)):
     dependencies:
       '@eslint-community/eslint-utils': 4.7.0(eslint@9.28.0)
       eslint: 9.28.0
@@ -10013,7 +10013,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.272.2: {}
+  flow-parser@0.273.0: {}
 
   follow-redirects@1.15.9(debug@4.4.1):
     optionalDependencies:
@@ -10948,7 +10948,7 @@ snapshots:
       '@babel/register': 7.27.1(@babel/core@7.27.4)
       babel-core: 7.0.0-bridge.0(@babel/core@7.27.4)
       chalk: 4.1.2
-      flow-parser: 0.272.2
+      flow-parser: 0.273.0
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
