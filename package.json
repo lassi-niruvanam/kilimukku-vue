@@ -46,7 +46,7 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.1",
     "typescript-transform-paths": "^3.5.5",
-    "vite": "^6.3.5",
+    "vite": "^7.0.0",
     "vitest": "^3.1.4",
     "vue": "^3.5.14"
   },
