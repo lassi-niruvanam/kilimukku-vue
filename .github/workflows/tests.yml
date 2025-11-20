@@ -22,7 +22,7 @@ jobs:
           version: latest
 
       - name: திறு
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: நிறுவல் செய்யு
         run: pnpm install
@@ -45,7 +45,7 @@ jobs:
           version: latest
 
       - name: Ouvrir la branche
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Installer
         run: pnpm install
