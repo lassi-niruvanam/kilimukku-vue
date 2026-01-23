@@ -68,7 +68,7 @@ importers:
         version: 3.2.0
       globals:
         specifier: ^17.0.0
-        version: 17.0.0
+        version: 17.1.0
       happy-dom:
         specifier: 20.3.7
         version: 20.3.7
@@ -3243,8 +3243,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.297.0:
-    resolution: {integrity: sha512-51kjVLwebsDNCrBrm+VLBJ1rEZffrWzsEPjfbdhf/0lxQkX01zFoiojwEW7l6902p1ZQI/ju/QmLGowwne23lg==}
+  flow-parser@0.298.0:
+    resolution: {integrity: sha512-sSWgBEU+IJmcozN5VtMYcN6Q8zD/QF7Ty1Iw8t+XJG4uimVuJG1J98XhuUSgqxOm2XGvrjb8sy5ctBBpwLD5zQ==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.9:
@@ -3382,8 +3382,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.0.0:
-    resolution: {integrity: sha512-gv5BeD2EssA793rlFWVPMMCqefTlpusw6/2TbAVMy0FzcG8wKJn4O+NqJ4+XWmmwrayJgw5TzrmWjFgmz1XPqw==}
+  globals@17.1.0:
+    resolution: {integrity: sha512-8HoIcWI5fCvG5NADj4bDav+er9B9JMj2vyL2pI8D0eismKyUvPLTSs+Ln3wqhwcp306i73iyVnEKx3F6T47TGw==}
     engines: {node: '>=18'}
 
   gopd@1.2.0:
@@ -11084,7 +11084,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.297.0: {}
+  flow-parser@0.298.0: {}
 
   follow-redirects@1.15.9(debug@4.4.3):
     optionalDependencies:
@@ -11231,7 +11231,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.0.0: {}
+  globals@17.1.0: {}
 
   gopd@1.2.0: {}
 
@@ -12104,7 +12104,7 @@ snapshots:
       '@babel/register': 7.28.6(@babel/core@7.28.6)
       babel-core: 7.0.0-bridge.0(@babel/core@7.28.6)
       chalk: 4.1.2
-      flow-parser: 0.297.0
+      flow-parser: 0.298.0
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
