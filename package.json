@@ -24,7 +24,7 @@
     "ennikkai": "^2.3.4",
     "lodash-es": "^4.17.21",
     "nuchabal": "^3.2.7",
-    "uuid": "^11.1.0"
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@constl/ipa": "^1.6.22",
