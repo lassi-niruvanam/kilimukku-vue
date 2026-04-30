@@ -31,7 +31,7 @@ importers:
         version: 3.2.7(@constl/ipa@1.6.24(react-native@0.74.1(@babel/core@7.29.0)(@babel/preset-env@7.24.5(@babel/core@7.29.0))(react@18.2.0)))
       uuid:
         specifier: ^11.1.0
-        version: 11.1.0
+        version: 11.1.1
     devDependencies:
       '@constl/ipa':
         specifier: ^1.6.22
@@ -3236,8 +3236,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.311.0:
-    resolution: {integrity: sha512-3tbmV0VdoFXdNqJjNksVLIksu78BvUMK5eAR5ZF1TAsV+wVu4jXipRpHKquDGhPRKrLl2DCafjRTV99jVMlMwQ==}
+  flow-parser@0.312.0:
+    resolution: {integrity: sha512-y1iG1bU7i22Mc3sSlchhmV992o8vxzwFLy6K1ZZqbmfXf0qpljN1/AZRuhOA+8uMz8a5iQUdoUyT7pvmdN1flA==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.9:
@@ -5740,16 +5740,18 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
 
-  uuid@11.1.0:
-    resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
+  uuid@11.1.1:
+    resolution: {integrity: sha512-vIYxrBCC/N/K+Js3qSN88go7kIfNPssr/hHCesKCQNAjmgvYS2oqr69kIufEG+O4+PfezOH4EbIeHCfFov8ZgQ==}
     hasBin: true
 
   uuid@8.0.0:
     resolution: {integrity: sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   validate-npm-package-license@3.0.4:
@@ -7302,7 +7304,7 @@ snapshots:
       ajv: 8.17.1
       events: 3.3.0
       helia: 5.4.2(react-native@0.74.1(@babel/core@7.29.0)(@babel/preset-env@7.24.5(@babel/core@7.29.0))(react@18.2.0))
-      uuid: 11.1.0
+      uuid: 11.1.1
     transitivePeerDependencies:
       - bufferutil
       - react-native
@@ -7388,7 +7390,7 @@ snapshots:
       tiny-typed-emitter: 2.1.0
       tslib: 2.8.1
       uint8arrays: 5.1.0
-      uuid: 11.1.0
+      uuid: 11.1.1
       wherearewe: 2.0.1
       xlsx: https://cdn.sheetjs.com/xlsx-0.19.1/xlsx-0.19.1.tgz
     transitivePeerDependencies:
@@ -7403,7 +7405,7 @@ snapshots:
     dependencies:
       events: 3.3.0
       tiny-typed-emitter: 2.1.0
-      uuid: 11.1.0
+      uuid: 11.1.1
 
   '@constl/utils-ipa@1.0.5':
     dependencies:
@@ -7475,7 +7477,7 @@ snapshots:
       stream-browserify: 3.0.0
       uint8arrays: 5.1.0
       url-polyfill: 1.1.13
-      uuid: 11.1.0
+      uuid: 11.1.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
       - bufferutil
@@ -7930,7 +7932,7 @@ snapshots:
       '@constl/ipa': 1.6.24(react-native@0.74.1(@babel/core@7.29.0)(@babel/preset-env@7.24.5(@babel/core@7.29.0))(react@18.2.0))
       '@constl/utils-ipa': 2.0.6
       '@lassi-js/kili': 0.4.5
-      uuid: 11.1.0
+      uuid: 11.1.1
       wherearewe: 2.0.1
     transitivePeerDependencies:
       - bufferutil
@@ -9659,7 +9661,7 @@ snapshots:
 
   '@types/uuid@11.0.0':
     dependencies:
-      uuid: 11.1.0
+      uuid: 11.1.1
 
   '@types/whatwg-mimetype@3.0.2': {}
 
@@ -11140,7 +11142,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.311.0: {}
+  flow-parser@0.312.0: {}
 
   follow-redirects@1.15.9(debug@4.4.3):
     optionalDependencies:
@@ -12144,7 +12146,7 @@ snapshots:
       '@babel/register': 7.28.6(@babel/core@7.29.0)
       babel-core: 7.0.0-bridge.0(@babel/core@7.29.0)
       chalk: 4.1.2
-      flow-parser: 0.311.0
+      flow-parser: 0.312.0
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
@@ -14065,7 +14067,7 @@ snapshots:
 
   utils-merge@1.0.1: {}
 
-  uuid@11.1.0: {}
+  uuid@11.1.1: {}
 
   uuid@8.0.0: {}
 
