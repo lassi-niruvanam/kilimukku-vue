@@ -62,7 +62,7 @@ importers:
         version: 10.1.8(eslint@10.3.0)
       eslint-plugin-vue:
         specifier: ^10.1.0
-        version: 10.9.0(@typescript-eslint/parser@8.59.2(eslint@10.3.0)(typescript@6.0.3))(eslint@10.3.0)(vue-eslint-parser@9.4.3(eslint@10.3.0))
+        version: 10.9.1(@typescript-eslint/parser@8.59.2(eslint@10.3.0)(typescript@6.0.3))(eslint@10.3.0)(vue-eslint-parser@9.4.3(eslint@10.3.0))
       genversion:
         specifier: ^3.2.0
         version: 3.2.0
@@ -670,8 +670,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/plugin-transform-modules-systemjs@7.29.0':
-    resolution: {integrity: sha512-PrujnVFbOdUpw4UHiVwKvKRLMMic8+eC0CuNlxjsyZUiBjhFdPsewdXCkveh2KqBA9/waD0W1b4hXSOBQJezpQ==}
+  '@babel/plugin-transform-modules-systemjs@7.29.4':
+    resolution: {integrity: sha512-N7QmZ0xRZfjHOfZeQLJjwgX2zS9pdGHSVl/cjSGlo4dXMqvurfxXDMKY4RqEKzPozV78VMcd0lxyG13mlbKc4w==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3036,14 +3036,14 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-vue@10.9.0:
-    resolution: {integrity: sha512-EFNNzu4HqtTRb5DJINpyd+u3bDdzETWDMpCzG+UBHz1tpsnMDCeOcf61u4Wy/cbXnMymK+MT9bjH7KcG1fItSw==}
+  eslint-plugin-vue@10.9.1:
+    resolution: {integrity: sha512-cHB0Tf4Duvzwecwd/AqWzZvF/QszE13BhjVUpVXWCy9AeMR5GjkAjP3i85vqgLgOuTmkHR1OJ5oMeqLHtuw8zg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@stylistic/eslint-plugin': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
       '@typescript-eslint/parser': ^7.0.0 || ^8.0.0
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
-      vue-eslint-parser: ^10.0.0
+      vue-eslint-parser: ^10.3.0
     peerDependenciesMeta:
       '@stylistic/eslint-plugin':
         optional: true
@@ -3245,8 +3245,8 @@ packages:
   flow-enums-runtime@0.0.6:
     resolution: {integrity: sha512-3PYnM29RFXwvAN6Pc/scUfkI7RwhQ/xqyLUyPNlXUp9S40zI8nup9tUSrTLSVnWGBN38FNiGWbwZOB6uR4OGdw==}
 
-  flow-parser@0.312.0:
-    resolution: {integrity: sha512-y1iG1bU7i22Mc3sSlchhmV992o8vxzwFLy6K1ZZqbmfXf0qpljN1/AZRuhOA+8uMz8a5iQUdoUyT7pvmdN1flA==}
+  flow-parser@0.312.1:
+    resolution: {integrity: sha512-z3MBP/WjRtNVEC6i9qsVla1c2EDbGDSvw4zJlzdBydqM44dc8eWNaRqNMPuWC7Efu3NzLosQrnTFlVknaDDaQg==}
     engines: {node: '>=0.4.0'}
 
   follow-redirects@1.15.9:
@@ -6836,7 +6836,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/plugin-transform-modules-systemjs@7.29.0(@babel/core@7.29.0)':
+  '@babel/plugin-transform-modules-systemjs@7.29.4(@babel/core@7.29.0)':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/helper-module-transforms': 7.28.6(@babel/core@7.29.0)
@@ -7097,7 +7097,7 @@ snapshots:
       '@babel/plugin-transform-member-expression-literals': 7.27.1(@babel/core@7.29.0)
       '@babel/plugin-transform-modules-amd': 7.27.1(@babel/core@7.29.0)
       '@babel/plugin-transform-modules-commonjs': 7.28.6(@babel/core@7.29.0)
-      '@babel/plugin-transform-modules-systemjs': 7.29.0(@babel/core@7.29.0)
+      '@babel/plugin-transform-modules-systemjs': 7.29.4(@babel/core@7.29.0)
       '@babel/plugin-transform-modules-umd': 7.27.1(@babel/core@7.29.0)
       '@babel/plugin-transform-named-capturing-groups-regex': 7.29.0(@babel/core@7.29.0)
       '@babel/plugin-transform-new-target': 7.27.1(@babel/core@7.29.0)
@@ -10918,7 +10918,7 @@ snapshots:
     dependencies:
       eslint: 10.3.0
 
-  eslint-plugin-vue@10.9.0(@typescript-eslint/parser@8.59.2(eslint@10.3.0)(typescript@6.0.3))(eslint@10.3.0)(vue-eslint-parser@9.4.3(eslint@10.3.0)):
+  eslint-plugin-vue@10.9.1(@typescript-eslint/parser@8.59.2(eslint@10.3.0)(typescript@6.0.3))(eslint@10.3.0)(vue-eslint-parser@9.4.3(eslint@10.3.0)):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.3.0)
       eslint: 10.3.0
@@ -11148,7 +11148,7 @@ snapshots:
 
   flow-enums-runtime@0.0.6: {}
 
-  flow-parser@0.312.0: {}
+  flow-parser@0.312.1: {}
 
   follow-redirects@1.15.9(debug@4.4.3):
     optionalDependencies:
@@ -12151,7 +12151,7 @@ snapshots:
       '@babel/register': 7.29.3(@babel/core@7.29.0)
       babel-core: 7.0.0-bridge.0(@babel/core@7.29.0)
       chalk: 4.1.2
-      flow-parser: 0.312.0
+      flow-parser: 0.312.1
       graceful-fs: 4.2.11
       micromatch: 4.0.8
       neo-async: 2.6.2
